@@ -1,0 +1,734 @@
+{
+  "name": "PSYC100 - Psychology (Comprehensive)",
+  "description": "Social influence, professional psychology, and cognitive biases with detailed questions per lesson",
+  "lessons": [
+    {"title": "W7L01: What makes us human?", "description": "Human nature and social psychology intro"},
+    {"title": "W7L02: The obedience trap", "description": "Milgram's obedience experiments"},
+    {"title": "W7L03: The power of the situation", "description": "Situational influences on behavior"},
+    {"title": "W7L04: The conformity effect", "description": "Asch's conformity studies"},
+    {"title": "W7L05: The bystander effect", "description": "Diffusion of responsibility"},
+    {"title": "W7L06: Why we lie to ourselves", "description": "Cognitive dissonance"},
+    {"title": "W7L07: The power of the crowd", "description": "Group dynamics"},
+    {"title": "W7L08: Social influence in digital age", "description": "Online behavior"},
+    {"title": "W7L09: Ethics in psychological research", "description": "Research ethics"},
+    {"title": "W7L10: Reflection - me vs the system", "description": "Personal vs situational factors"},
+    {"title": "W8L01: Maslow's hierarchy of needs", "description": "Motivation theory"},
+    {"title": "W8L02: Self-determination theory", "description": "Intrinsic motivation"},
+    {"title": "W8L03: Goal-setting theory", "description": "Effective goals"},
+    {"title": "W8L04: Self-efficacy", "description": "Belief in abilities"},
+    {"title": "W8L05: Growth mindset", "description": "Fixed vs growth mindset"},
+    {"title": "W8L06: Locus of control", "description": "Internal vs external control"},
+    {"title": "W8L07: Flow theory", "description": "Optimal experience"},
+    {"title": "W8L08: ABCDE model", "description": "Stress management"},
+    {"title": "W8L09: JD-R model", "description": "Job demands and resources"},
+    {"title": "W8L10: Psychological safety", "description": "Team safety"},
+    {"title": "W8L11: Grit", "description": "Perseverance and passion"},
+    {"title": "W8L12: Imposter syndrome", "description": "Feeling like a fraud"},
+    {"title": "W8L13: Putting it all together", "description": "Integration"},
+    {"title": "W9L01: The brain as shortcut machine", "description": "Cognitive heuristics"},
+    {"title": "W9L02: Anchoring & framing", "description": "Decision biases"},
+    {"title": "W9L03: Prospect theory and risk", "description": "Risk perception"},
+    {"title": "W9L04: False memories", "description": "Memory distortion"},
+    {"title": "W9L05: Selective attention", "description": "Inattentional blindness"},
+    {"title": "W9L06: The marshmallow test", "description": "Delayed gratification"},
+    {"title": "W9L07: Dunning-Kruger effect", "description": "Competence and confidence"},
+    {"title": "W9L08: Emotion and decision-making", "description": "Affective influence"},
+    {"title": "W9L09: Halo & horn effects", "description": "First impressions"},
+    {"title": "W9L10: Putting it all together", "description": "Integration"}
+  ],
+  "questions": [
+    {
+      "question": "What distinguishes human social behavior from other animals?",
+      "type": "multiple_choice",
+      "choices": ["Complex culture and moral reasoning", "Physical strength", "Speed", "Fur color"],
+      "answer": "Complex culture and moral reasoning",
+      "explanation": "Humans have unique capacity for culture, language, and abstract moral thinking",
+      "lesson": "W7L01: What makes us human?",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is social psychology primarily concerned with?",
+      "type": "multiple_choice",
+      "choices": ["How situations and others influence behavior", "Brain chemistry", "Genetics", "Dreams"],
+      "answer": "How situations and others influence behavior",
+      "explanation": "Social psychology studies how social context shapes thoughts and actions",
+      "lesson": "W7L01: What makes us human?",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What makes humans particularly vulnerable to social influence?",
+      "type": "multiple_choice",
+      "choices": ["Need for belonging and approval", "Physical weakness", "Poor memory", "Bad eyesight"],
+      "answer": "Need for belonging and approval",
+      "explanation": "Social needs drive conformity and obedience",
+      "lesson": "W7L01: What makes us human?",
+      "difficulty": "medium"
+    },
+    {
+      "question": "In Milgram's experiment, what percentage of participants gave the maximum shock?",
+      "type": "multiple_choice",
+      "choices": ["65%", "10%", "90%", "30%"],
+      "answer": "65%",
+      "explanation": "Despite predictions of <1%, 65% obeyed to the maximum level",
+      "lesson": "W7L02: The obedience trap",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What did Milgram's experiment demonstrate?",
+      "type": "multiple_choice",
+      "choices": ["People obey authority even when harming others", "People are naturally cruel", "Education prevents obedience", "Women are more obedient"],
+      "answer": "People obey authority even when harming others",
+      "explanation": "Ordinary people obeyed perceived authority to inflict harm",
+      "lesson": "W7L02: The obedience trap",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What factor most increased obedience in Milgram's study?",
+      "type": "multiple_choice",
+      "choices": ["Physical presence of authority figure", "Money", "Time pressure", "Room temperature"],
+      "answer": "Physical presence of authority figure",
+      "explanation": "Proximity of authority increased compliance rates",
+      "lesson": "W7L02: The obedience trap",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the fundamental attribution error?",
+      "type": "multiple_choice",
+      "choices": ["Overestimating personality, underestimating situation", "Forgetting names", "Bad memory", "Poor judgment"],
+      "answer": "Overestimating personality, underestimating situation",
+      "explanation": "We attribute others' behavior to character while ignoring context",
+      "lesson": "W7L03: The power of the situation",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When we make mistakes, we tend to blame:",
+      "type": "multiple_choice",
+      "choices": ["The situation", "Our personality", "Other people always", "Nothing"],
+      "answer": "The situation",
+      "explanation": "We make the opposite error for ourselves vs others",
+      "lesson": "W7L03: The power of the situation",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What did Zimbardo's Stanford Prison Experiment show?",
+      "type": "multiple_choice",
+      "choices": ["Situations can override personality", "Prisoners are bad people", "Guards are cruel", "College students are violent"],
+      "answer": "Situations can override personality",
+      "explanation": "Role assignment transformed normal people's behavior dramatically",
+      "lesson": "W7L03: The power of the situation",
+      "difficulty": "medium"
+    },
+    {
+      "question": "In Asch's line study, what were participants asked to do?",
+      "type": "multiple_choice",
+      "choices": ["Match line lengths - an easy task", "Solve math problems", "Remember words", "Draw pictures"],
+      "answer": "Match line lengths - an easy task",
+      "explanation": "Task was deliberately simple to highlight conformity pressure",
+      "lesson": "W7L04: The conformity effect",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What percentage of Asch participants conformed at least once?",
+      "type": "multiple_choice",
+      "choices": ["75%", "25%", "100%", "0%"],
+      "answer": "75%",
+      "explanation": "About 75% went along with wrong answer at least once",
+      "lesson": "W7L04: The conformity effect",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What reduces conformity in Asch's paradigm?",
+      "type": "multiple_choice",
+      "choices": ["Having one ally who disagrees with group", "Money", "Intelligence", "Age"],
+      "answer": "Having one ally who disagrees with group",
+      "explanation": "A single dissenter breaks the unanimity and reduces conformity",
+      "lesson": "W7L04: The conformity effect",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the bystander effect?",
+      "type": "multiple_choice",
+      "choices": ["Less likely to help when others are present", "Helping more in groups", "Standing on the side", "Watching accidents"],
+      "answer": "Less likely to help when others are present",
+      "explanation": "More bystanders leads to diffusion of responsibility",
+      "lesson": "W7L05: The bystander effect",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is diffusion of responsibility?",
+      "type": "multiple_choice",
+      "choices": ["Feeling less personally responsible in groups", "Spreading tasks", "Delegating work", "Avoiding work"],
+      "answer": "Feeling less personally responsible in groups",
+      "explanation": "Presence of others dilutes individual sense of obligation",
+      "lesson": "W7L05: The bystander effect",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What case sparked research on the bystander effect?",
+      "type": "multiple_choice",
+      "choices": ["Kitty Genovese murder", "Stanford prison", "Milgram's study", "Asch's lines"],
+      "answer": "Kitty Genovese murder",
+      "explanation": "38 witnesses reportedly didn't intervene in her murder",
+      "lesson": "W7L05: The bystander effect",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is cognitive dissonance?",
+      "type": "multiple_choice",
+      "choices": ["Mental discomfort from contradictory beliefs", "Forgetting things", "Disagreeing with others", "Learning disabilities"],
+      "answer": "Mental discomfort from contradictory beliefs",
+      "explanation": "Tension from holding conflicting cognitions",
+      "lesson": "W7L06: Why we lie to ourselves",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do people typically reduce cognitive dissonance?",
+      "type": "multiple_choice",
+      "choices": ["Change beliefs or justify behavior", "Ignore it", "Forget it", "Ask others"],
+      "answer": "Change beliefs or justify behavior",
+      "explanation": "We rationalize to restore consistency",
+      "lesson": "W7L06: Why we lie to ourselves",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is an example of cognitive dissonance?",
+      "type": "multiple_choice",
+      "choices": ["Smoker who knows smoking is unhealthy", "Forgetting a name", "Liking two foods", "Preferring summer"],
+      "answer": "Smoker who knows smoking is unhealthy",
+      "explanation": "Behavior contradicts knowledge, creating discomfort",
+      "lesson": "W7L06: Why we lie to ourselves",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is groupthink?",
+      "type": "multiple_choice",
+      "choices": ["Desire for harmony leads to poor decisions", "Thinking in groups", "Group therapy", "Team building"],
+      "answer": "Desire for harmony leads to poor decisions",
+      "explanation": "Consensus-seeking overrides realistic appraisal",
+      "lesson": "W7L07: The power of the crowd",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is group polarization?",
+      "type": "multiple_choice",
+      "choices": ["Groups become more extreme after discussion", "Groups split apart", "Groups disagree", "Groups are moderate"],
+      "answer": "Groups become more extreme after discussion",
+      "explanation": "Group discussion amplifies initial tendencies",
+      "lesson": "W7L07: The power of the crowd",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is deindividuation?",
+      "type": "multiple_choice",
+      "choices": ["Loss of self-awareness in crowds", "Becoming unique", "Personal growth", "Meditation"],
+      "answer": "Loss of self-awareness in crowds",
+      "explanation": "Anonymity in groups reduces personal responsibility",
+      "lesson": "W7L07: The power of the crowd",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does social media amplify social influence?",
+      "type": "multiple_choice",
+      "choices": ["Echo chambers and viral spread", "It doesn't", "Makes people independent", "Reduces influence"],
+      "answer": "Echo chambers and viral spread",
+      "explanation": "Algorithms create filter bubbles and rapid information cascade",
+      "lesson": "W7L08: Social influence in digital age",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is an echo chamber?",
+      "type": "multiple_choice",
+      "choices": ["Environment where beliefs are reinforced", "Sound studio", "Music venue", "Empty room"],
+      "answer": "Environment where beliefs are reinforced",
+      "explanation": "Exposure only to confirming information strengthens beliefs",
+      "lesson": "W7L08: Social influence in digital age",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a key ethical principle established after Milgram's study?",
+      "type": "multiple_choice",
+      "choices": ["Informed consent and debriefing", "No rules needed", "Deception always allowed", "Harm is acceptable"],
+      "answer": "Informed consent and debriefing",
+      "explanation": "Participants must know risks and be debriefed after",
+      "lesson": "W7L09: Ethics in psychological research",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the principle of 'do no harm' in research?",
+      "type": "multiple_choice",
+      "choices": ["Minimize risk and distress to participants", "Never use humans", "Only study animals", "Avoid all research"],
+      "answer": "Minimize risk and distress to participants",
+      "explanation": "Benefits must outweigh risks, with protections in place",
+      "lesson": "W7L09: Ethics in psychological research",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does the person-situation debate examine?",
+      "type": "multiple_choice",
+      "choices": ["Relative influence of personality vs context", "Who is right", "Which is better", "Neither matters"],
+      "answer": "Relative influence of personality vs context",
+      "explanation": "Behavior results from interaction of person and situation",
+      "lesson": "W7L10: Reflection - me vs the system",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the best predictor of behavior?",
+      "type": "multiple_choice",
+      "choices": ["Both person and situation together", "Only personality", "Only situation", "Neither"],
+      "answer": "Both person and situation together",
+      "explanation": "Interactionist perspective: person × situation",
+      "lesson": "W7L10: Reflection - me vs the system",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the five levels of Maslow's hierarchy from bottom to top?",
+      "type": "multiple_choice",
+      "choices": ["Physiological, Safety, Love/Belonging, Esteem, Self-actualization", "Food, Water, Sleep, Work, Play", "Money, Power, Fame, Love, Wisdom", "Basic, Advanced, Expert, Master, Legend"],
+      "answer": "Physiological, Safety, Love/Belonging, Esteem, Self-actualization",
+      "explanation": "Needs are hierarchical: lower must be met before higher",
+      "lesson": "W8L01: Maslow's hierarchy of needs",
+      "difficulty": "easy"
+    },
+    {
+      "question": "According to Maslow, what must happen before seeking esteem?",
+      "type": "multiple_choice",
+      "choices": ["Lower needs must be satisfied", "Nothing required", "Wealth needed", "Education needed"],
+      "answer": "Lower needs must be satisfied",
+      "explanation": "Hierarchy suggests progression from basic to higher needs",
+      "lesson": "W8L01: Maslow's hierarchy of needs",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is self-actualization?",
+      "type": "multiple_choice",
+      "choices": ["Realizing full potential", "Making money", "Getting famous", "Being happy"],
+      "answer": "Realizing full potential",
+      "explanation": "Highest level: becoming the best version of yourself",
+      "lesson": "W8L01: Maslow's hierarchy of needs",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the three components of self-determination theory?",
+      "type": "multiple_choice",
+      "choices": ["Autonomy, Competence, Relatedness", "Money, Power, Fame", "Food, Water, Shelter", "Work, Rest, Play"],
+      "answer": "Autonomy, Competence, Relatedness",
+      "explanation": "These three psychological needs drive intrinsic motivation",
+      "lesson": "W8L02: Self-determination theory",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is autonomy in SDT?",
+      "type": "multiple_choice",
+      "choices": ["Sense of choice and control", "Being alone", "Independence", "Freedom"],
+      "answer": "Sense of choice and control",
+      "explanation": "Feeling self-directed rather than controlled",
+      "lesson": "W8L02: Self-determination theory",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is relatedness in SDT?",
+      "type": "multiple_choice",
+      "choices": ["Feeling connected to others", "Being related by blood", "Similar interests", "Working together"],
+      "answer": "Feeling connected to others",
+      "explanation": "Sense of belonging and meaningful relationships",
+      "lesson": "W8L02: Self-determination theory",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What makes goals effective according to goal-setting theory?",
+      "type": "multiple_choice",
+      "choices": ["Specific, challenging, with feedback", "Easy and vague", "Impossible dreams", "No goals"],
+      "answer": "Specific, challenging, with feedback",
+      "explanation": "SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound",
+      "lesson": "W8L03: Goal-setting theory",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why should goals be challenging but achievable?",
+      "type": "multiple_choice",
+      "choices": ["Motivates effort without causing hopelessness", "Makes you work harder", "Impresses others", "No reason"],
+      "answer": "Motivates effort without causing hopelessness",
+      "explanation": "Sweet spot: stretches abilities without overwhelming",
+      "lesson": "W8L03: Goal-setting theory",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is self-efficacy?",
+      "type": "multiple_choice",
+      "choices": ["Belief in your ability to succeed at tasks", "Self-esteem", "Confidence", "Competence"],
+      "answer": "Belief in your ability to succeed at tasks",
+      "explanation": "Task-specific confidence in one's capabilities",
+      "lesson": "W8L04: Self-efficacy",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How does high self-efficacy affect behavior?",
+      "type": "multiple_choice",
+      "choices": ["Increases effort and persistence", "Makes you lazy", "No effect", "Reduces effort"],
+      "answer": "Increases effort and persistence",
+      "explanation": "Belief in success drives greater investment",
+      "lesson": "W8L04: Self-efficacy",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between fixed and growth mindset?",
+      "type": "multiple_choice",
+      "choices": ["Fixed: abilities are unchangeable; Growth: abilities can develop", "No difference", "Fixed is better", "Growth is worse"],
+      "answer": "Fixed: abilities are unchangeable; Growth: abilities can develop",
+      "explanation": "Growth mindset sees intelligence as malleable through effort",
+      "lesson": "W8L05: Growth mindset",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do people with growth mindset view failure?",
+      "type": "multiple_choice",
+      "choices": ["Learning opportunity", "Proof of inability", "Final judgment", "Embarrassment"],
+      "answer": "Learning opportunity",
+      "explanation": "Setbacks are feedback for improvement, not identity threats",
+      "lesson": "W8L05: Growth mindset",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is locus of control?",
+      "type": "multiple_choice",
+      "choices": ["Belief about who controls your outcomes", "Brain region", "Self-control ability", "Decision-making"],
+      "answer": "Belief about who controls your outcomes",
+      "explanation": "Internal vs external attribution of control",
+      "lesson": "W8L06: Locus of control",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What characterizes internal locus of control?",
+      "type": "multiple_choice",
+      "choices": ["Believing you control your outcomes", "Blaming others", "Feeling helpless", "Random attribution"],
+      "answer": "Believing you control your outcomes",
+      "explanation": "Internal: success and failure come from own actions",
+      "lesson": "W8L06: Locus of control",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is flow according to Csikszentmihalyi?",
+      "type": "multiple_choice",
+      "choices": ["Optimal experience when challenge matches skill", "Running water", "Going with the flow", "Being lazy"],
+      "answer": "Optimal experience when challenge matches skill",
+      "explanation": "Total absorption in activity; in the zone",
+      "lesson": "W8L07: Flow theory",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What prevents flow?",
+      "type": "multiple_choice",
+      "choices": ["Challenge too high (anxiety) or too low (boredom)", "Working hard", "Having fun", "Being focused"],
+      "answer": "Challenge too high (anxiety) or too low (boredom)",
+      "explanation": "Flow requires balance: skills match challenges",
+      "lesson": "W8L07: Flow theory",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does ABCDE stand for in the stress model?",
+      "type": "multiple_choice",
+      "choices": ["Adversity, Beliefs, Consequences, Dispute, Energize", "Always Be Creating Diverse Energy", "Actions Build Character Daily Everywhere", "None of these"],
+      "answer": "Adversity, Beliefs, Consequences, Dispute, Energize",
+      "explanation": "Cognitive approach to managing stress and emotions",
+      "lesson": "W8L08: ABCDE model",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does the ABCDE model teach?",
+      "type": "multiple_choice",
+      "choices": ["Challenge irrational beliefs about events", "Accept everything", "Avoid problems", "Express emotions"],
+      "answer": "Challenge irrational beliefs about events",
+      "explanation": "Beliefs about events, not events themselves, cause distress",
+      "lesson": "W8L08: ABCDE model",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does JD-R model stand for?",
+      "type": "multiple_choice",
+      "choices": ["Job Demands-Resources", "Just Do Right", "Job Description Required", "Journey, Destination, Return"],
+      "answer": "Job Demands-Resources",
+      "explanation": "Model of workplace stress and motivation",
+      "lesson": "W8L09: JD-R model",
+      "difficulty": "easy"
+    },
+    {
+      "question": "According to JD-R, what prevents burnout?",
+      "type": "multiple_choice",
+      "choices": ["Resources that match or exceed demands", "Working less", "Quitting", "Ignoring stress"],
+      "answer": "Resources that match or exceed demands",
+      "explanation": "Sufficient resources buffer against high demands",
+      "lesson": "W8L09: JD-R model",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is psychological safety?",
+      "type": "multiple_choice",
+      "choices": ["Feeling safe to take interpersonal risks", "Physical safety", "Job security", "Emotional stability"],
+      "answer": "Feeling safe to take interpersonal risks",
+      "explanation": "Team climate where people can speak up without fear",
+      "lesson": "W8L10: Psychological safety",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why is psychological safety important?",
+      "type": "multiple_choice",
+      "choices": ["Enables learning, innovation, and honest feedback", "Makes people comfortable", "Reduces conflict", "Increases productivity"],
+      "answer": "Enables learning, innovation, and honest feedback",
+      "explanation": "People share ideas and admit mistakes without fear",
+      "lesson": "W8L10: Psychological safety",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is grit according to Angela Duckworth?",
+      "type": "multiple_choice",
+      "choices": ["Perseverance and passion for long-term goals", "Toughness", "Intelligence", "Talent"],
+      "answer": "Perseverance and passion for long-term goals",
+      "explanation": "Sustained effort and interest over years",
+      "lesson": "W8L11: Grit",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What predicts success better than IQ according to grit research?",
+      "type": "multiple_choice",
+      "choices": ["Sustained effort over time", "Natural talent", "Luck", "Connections"],
+      "answer": "Sustained effort over time",
+      "explanation": "Grit matters more than raw ability for achievement",
+      "lesson": "W8L11: Grit",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is imposter syndrome?",
+      "type": "multiple_choice",
+      "choices": ["Feeling like a fraud despite accomplishments", "Being an actual imposter", "Low self-esteem", "Shyness"],
+      "answer": "Feeling like a fraud despite accomplishments",
+      "explanation": "Doubting deserved success, attributing it to luck",
+      "lesson": "W8L12: Imposter syndrome",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Who commonly experiences imposter syndrome?",
+      "type": "multiple_choice",
+      "choices": ["High achievers and successful people", "Only failures", "No one", "Everyone equally"],
+      "answer": "High achievers and successful people",
+      "explanation": "Paradoxically common among accomplished individuals",
+      "lesson": "W8L12: Imposter syndrome",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do motivation theories connect to professional success?",
+      "type": "multiple_choice",
+      "choices": ["Understanding drives enables better self-management", "They don't connect", "Only for managers", "Only for therapy"],
+      "answer": "Understanding drives enables better self-management",
+      "explanation": "Applying psychological principles enhances performance",
+      "lesson": "W8L13: Putting it all together",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which combination predicts success?",
+      "type": "multiple_choice",
+      "choices": ["Growth mindset + grit + self-efficacy", "Money + luck", "Talent alone", "Intelligence only"],
+      "answer": "Growth mindset + grit + self-efficacy",
+      "explanation": "Believing in development, persisting, and trusting ability",
+      "lesson": "W8L13: Putting it all together",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are heuristics?",
+      "type": "multiple_choice",
+      "choices": ["Mental shortcuts for quick decisions", "Logical reasoning", "Memory tricks", "Problem-solving steps"],
+      "answer": "Mental shortcuts for quick decisions",
+      "explanation": "Fast but sometimes flawed judgment strategies",
+      "lesson": "W9L01: The brain as shortcut machine",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why does the brain use heuristics?",
+      "type": "multiple_choice",
+      "choices": ["Efficiency - can't analyze everything deeply", "Laziness", "Stupidity", "Evolution failed"],
+      "answer": "Efficiency - can't analyze everything deeply",
+      "explanation": "Cognitive shortcuts save mental resources",
+      "lesson": "W9L01: The brain as shortcut machine",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the availability heuristic?",
+      "type": "multiple_choice",
+      "choices": ["Judging probability by ease of recall", "Using what's available", "Being available", "Checking availability"],
+      "answer": "Judging probability by ease of recall",
+      "explanation": "Memorable events seem more common than they are",
+      "lesson": "W9L01: The brain as shortcut machine",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is anchoring bias?",
+      "type": "multiple_choice",
+      "choices": ["Over-relying on first information received", "Staying in one place", "Being stubborn", "Ship anchors"],
+      "answer": "Over-relying on first information received",
+      "explanation": "Initial values influence subsequent estimates",
+      "lesson": "W9L02: Anchoring & framing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is framing effect?",
+      "type": "multiple_choice",
+      "choices": ["Same info presented differently affects choices", "Picture frames", "Building frames", "Time frames"],
+      "answer": "Same info presented differently affects choices",
+      "explanation": "90% survival vs 10% mortality rate example",
+      "lesson": "W9L02: Anchoring & framing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why does framing affect decisions?",
+      "type": "multiple_choice",
+      "choices": ["We're not purely rational - presentation matters", "We're stupid", "Language is confusing", "Math is hard"],
+      "answer": "We're not purely rational - presentation matters",
+      "explanation": "Emotional response to framing overrides logic",
+      "lesson": "W9L02: Anchoring & framing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is loss aversion in prospect theory?",
+      "type": "multiple_choice",
+      "choices": ["Losses hurt more than equivalent gains feel good", "Afraid of losing", "Risk-seeking", "Gambling addiction"],
+      "answer": "Losses hurt more than equivalent gains feel good",
+      "explanation": "Losing $100 > pain than gaining $100 = pleasure",
+      "lesson": "W9L03: Prospect theory and risk",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do people behave differently in gain vs loss frames?",
+      "type": "multiple_choice",
+      "choices": ["Risk-averse for gains, risk-seeking for losses", "Always risk-averse", "Always risk-seeking", "No difference"],
+      "answer": "Risk-averse for gains, risk-seeking for losses",
+      "explanation": "Gamble to avoid losses, play safe with gains",
+      "lesson": "W9L03: Prospect theory and risk",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What did Elizabeth Loftus discover about memory?",
+      "type": "multiple_choice",
+      "choices": ["Memories can be distorted and created by suggestion", "Memory is perfect", "Memory improves with age", "We never forget"],
+      "answer": "Memories can be distorted and created by suggestion",
+      "explanation": "Leading questions create false memories that feel real",
+      "lesson": "W9L04: False memories",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the misinformation effect?",
+      "type": "multiple_choice",
+      "choices": ["Post-event information alters memory of original event", "Fake news", "Lying", "Poor memory"],
+      "answer": "Post-event information alters memory of original event",
+      "explanation": "Later suggestions integrate into memory as if originally experienced",
+      "lesson": "W9L04: False memories",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is inattentional blindness?",
+      "type": "multiple_choice",
+      "choices": ["Failing to notice obvious things when focused elsewhere", "Being blind", "Not paying attention", "Poor eyesight"],
+      "answer": "Failing to notice obvious things when focused elsewhere",
+      "explanation": "Gorilla walking through basketball game example",
+      "lesson": "W9L05: Selective attention",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does selective attention demonstrate?",
+      "type": "multiple_choice",
+      "choices": ["Limited attentional capacity - can't process everything", "We're lazy", "Vision is poor", "Memory fails"],
+      "answer": "Limited attentional capacity - can't process everything",
+      "explanation": "Attention is a limited resource; focus means missing other things",
+      "lesson": "W9L05: Selective attention",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What did the marshmallow test measure?",
+      "type": "multiple_choice",
+      "choices": ["Delayed gratification and self-control", "Taste preferences", "Hunger", "Intelligence"],
+      "answer": "Delayed gratification and self-control",
+      "explanation": "Could children wait for bigger reward later?",
+      "lesson": "W9L06: The marshmallow test",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What did original marshmallow studies claim to predict?",
+      "type": "multiple_choice",
+      "choices": ["Later life success and achievement", "Diabetes risk", "Sweet tooth", "Nothing"],
+      "answer": "Later life success and achievement",
+      "explanation": "Self-control in childhood correlated with better outcomes (though debated)",
+      "lesson": "W9L06: The marshmallow test",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the Dunning-Kruger effect?",
+      "type": "multiple_choice",
+      "choices": ["Incompetent people overestimate ability; experts underestimate", "Smart people are confident", "Dumb people know it", "No pattern"],
+      "answer": "Incompetent people overestimate ability; experts underestimate",
+      "explanation": "Lack of knowledge prevents recognizing lack of knowledge",
+      "lesson": "W9L07: Dunning-Kruger effect",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do novices overestimate their competence?",
+      "type": "multiple_choice",
+      "choices": ["They don't know what they don't know", "They're arrogant", "They're stupid", "They lie"],
+      "answer": "They don't know what they don't know",
+      "explanation": "Metacognitive deficit: skill needed to judge skill is the skill itself",
+      "lesson": "W9L07: Dunning-Kruger effect",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do emotions affect decision-making?",
+      "type": "multiple_choice",
+      "choices": ["Guide decisions and risk perception", "Ruin all decisions", "Don't affect decisions", "Only bad emotions matter"],
+      "answer": "Guide decisions and risk perception",
+      "explanation": "Emotions are integral to decision-making, not just interference",
+      "lesson": "W9L08: Emotion and decision-making",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are somatic markers?",
+      "type": "multiple_choice",
+      "choices": ["Bodily emotional signals that guide choices", "Body tattoos", "Medical symptoms", "Memory aids"],
+      "answer": "Bodily emotional signals that guide choices",
+      "explanation": "Gut feelings based on past emotional experiences",
+      "lesson": "W9L08: Emotion and decision-making",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the halo effect?",
+      "type": "multiple_choice",
+      "choices": ["One positive trait makes us view everything positively", "Angelic glow", "Good luck", "Positive thinking"],
+      "answer": "One positive trait makes us view everything positively",
+      "explanation": "Attractive = assumed smart, kind, competent",
+      "lesson": "W9L09: Halo & horn effects",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the horn effect?",
+      "type": "multiple_choice",
+      "choices": ["One negative trait makes us view everything negatively", "Devil horns", "Bad luck", "Being mean"],
+      "answer": "One negative trait makes us view everything negatively",
+      "explanation": "Opposite of halo: single flaw taints overall impression",
+      "lesson": "W9L09: Halo & horn effects",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What do cognitive biases reveal about human thinking?",
+      "type": "multiple_choice",
+      "choices": ["We're predictably irrational in systematic ways", "We're stupid", "We're perfect", "We're random"],
+      "answer": "We're predictably irrational in systematic ways",
+      "explanation": "Biases are consistent patterns, not random errors",
+      "lesson": "W9L10: Putting it all together",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Can awareness of biases eliminate them?",
+      "type": "multiple_choice",
+      "choices": ["No, but can reduce impact with strategies", "Yes, completely", "No effect at all", "Makes them worse"],
+      "answer": "No, but can reduce impact with strategies",
+      "explanation": "Awareness helps but doesn't eliminate automatic biases",
+      "lesson": "W9L10: Putting it all together",
+      "difficulty": "medium"
+    }
+  ]
+}

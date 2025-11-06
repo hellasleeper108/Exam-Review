@@ -153,14 +153,28 @@ Exam-Review/
 
 ## Courses Included
 
-### Programming Courses
-- **PY101 - Python Programming Fundamentals**: Complete course covering foundations (variables, operators, functions), control flow (conditionals, loops, lists), and data structures (strings, dicts, nested structures) - 28 questions
-- **CS101 - Professional Programming Practices**: Best practices for clean code, documentation, debugging, testing, planning, pseudocode, and problem decomposition - 28 questions
+### Comprehensive Courses (Lesson-by-Lesson Coverage)
+- **PY101 Comprehensive**: All 52 lessons with 3-4 questions each - **180 questions total**
+  - Week 1: Printing, variables, operators, functions, strings, scope, f-strings, debugging
+  - Week 2: Control flow, if/else, logical operators, loops, range, lists, sorting
+  - Week 3: String methods, split/join, dictionaries, nested structures, parsing, counting
 
-### Psychology Course
-- **PSYC100 - Introduction to Psychology**: Social influence (obedience, conformity, bystander effect), professional success psychology (motivation, goal-setting, stress management), and cognitive biases (heuristics, anchoring, Dunning-Kruger effect) - 28 questions
+- **CS101 Comprehensive**: All 44 lessons with 3-4 questions each - **154 questions total**
+  - Week 4: Naming, docstrings, clean code, refactoring, testing, debugging
+  - Week 5: Planning, pseudocode, patterns, stubs, incremental development, dry running
+  - Week 6: Problem statements, decomposition, prioritization, pipelines
 
-### Example Courses
+- **PSYC100 Comprehensive**: All 33 lessons with 3-4 questions each - **119 questions total**
+  - Week 7: Social psychology (obedience, conformity, bystander effect, cognitive dissonance)
+  - Week 8: Professional success (Maslow, SDT, goal-setting, growth mindset, flow, grit)
+  - Week 9: Cognitive biases (heuristics, anchoring, framing, Dunning-Kruger, false memory)
+
+### Quick Review Courses
+- **PY101 Quick Review**: Python fundamentals overview - 28 questions
+- **CS101 Quick Review**: Professional practices overview - 28 questions
+- **PSYC100 Quick Review**: Psychology concepts overview - 28 questions
+
+### Example/Demo Courses
 - **Python Basics**: Simple intro to variables, data types, functions, control flow - 8 questions
 - **Web Development**: HTML, CSS, JavaScript fundamentals - 7 questions
 
