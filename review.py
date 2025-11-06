@@ -18,24 +18,74 @@ from game_modes.timed import TimedChallengeMode
 from game_modes.sudden_death import SuddenDeathMode
 from utils.course_loader import CourseLoader
 from utils.display import clear_screen, print_header, print_menu
+from utils.progress_tracker import ProgressTracker
 
 
 def main():
     """Main entry point for the exam review application."""
-    clear_screen()
-    print_header("EXAM REVIEW GAME")
-
-    # Initialize course loader
+    # Initialize course loader and progress tracker
     courses_dir = Path(__file__).parent / "courses"
     loader = CourseLoader(courses_dir)
+    tracker = ProgressTracker()
 
     # Main loop
+    while True:
+        clear_screen()
+        print_header("EXAM REVIEW GAME")
+
+        # Show current level and XP
+        stats = tracker.get_stats()
+        print(f"👤 {stats['username']} | Level {stats['level']} | {stats['total_xp']} XP")
+        tracker.display_progress_bar()
+
+        # Main menu
+        print("MAIN MENU")
+        print_menu([
+            "Play",
+            "View Stats",
+            "View Leaderboard",
+            "Change Username",
+            "Exit"
+        ])
+
+        choice = input("Select option: ").strip()
+
+        if choice == "1":
+            # Play game
+            play_game(loader)
+        elif choice == "2":
+            # View stats
+            clear_screen()
+            tracker.display_stats()
+            input("Press Enter to continue...")
+        elif choice == "3":
+            # View leaderboard
+            clear_screen()
+            tracker.display_leaderboard()
+            input("Press Enter to continue...")
+        elif choice == "4":
+            # Change username
+            new_name = input("\nEnter new username: ").strip()
+            if new_name:
+                tracker.set_username(new_name)
+                print(f"Username updated to: {new_name}")
+            input("Press Enter to continue...")
+        elif choice == "5":
+            # Exit
+            print("\nThanks for studying! Good luck on your exam!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+            input("Press Enter to continue...")
+
+
+def play_game(loader):
+    """Play the game (course and mode selection)."""
     while True:
         # Course selection
         course = select_course(loader)
         if course is None:
-            print("\nThanks for studying! Good luck on your exam!")
-            break
+            return
 
         # Game mode selection
         game_mode = select_game_mode()
@@ -47,10 +97,9 @@ def main():
 
         # Ask if user wants to continue
         print("\n")
-        choice = input("Return to main menu? (y/n): ").strip().lower()
+        choice = input("Play again? (y/n): ").strip().lower()
         if choice != 'y':
-            print("\nThanks for studying! Good luck on your exam!")
-            break
+            return
 
 
 def select_course(loader):

@@ -1,9 +1,12 @@
 """Sudden death mode - one mistake and you're out!"""
 
 import random
+import time
 from .base import GameMode
 from utils.display import clear_screen, print_header
 from utils.course_loader import Course
+from utils.progress_tracker import ProgressTracker
+from utils.encouragements import get_correct_answer_message, get_level_up_message
 
 
 class SuddenDeathMode(GameMode):
@@ -11,6 +14,9 @@ class SuddenDeathMode(GameMode):
 
     def play(self, course: Course):
         """Run sudden death challenge."""
+        tracker = ProgressTracker()
+        start_time = time.time()
+
         clear_screen()
         print_header(f"SUDDEN DEATH - {course.name}")
 
@@ -31,6 +37,7 @@ class SuddenDeathMode(GameMode):
         input("Press Enter to start... if you dare!")
 
         streak = 0
+        total_xp_earned = 0
 
         for i, question in enumerate(questions, 1):
             clear_screen()
@@ -55,9 +62,12 @@ class SuddenDeathMode(GameMode):
                     answer_num = input("\nYour answer (or 'q' to quit while ahead): ").strip()
 
                     if answer_num.lower() == 'q':
+                        duration = int(time.time() - start_time)
+                        tracker.record_session(course.name, 'Sudden Death', streak, streak, duration)
+
                         clear_screen()
                         print_header("FINAL SCORE")
-                        self.show_final_results(streak, stopped_early=True)
+                        self.show_final_results(streak, total_xp_earned, stopped_early=True)
                         input("\nPress Enter to continue...")
                         return
 
@@ -73,13 +83,31 @@ class SuddenDeathMode(GameMode):
 
             # Check answer
             correct_answer = question.get('answer', '')
+            difficulty = question.get('difficulty', 'easy')
+            is_correct = user_answer == correct_answer
 
-            if user_answer == correct_answer:
+            xp_earned, leveled_up = tracker.record_answer(
+                course.name,
+                question.get('lesson', 'Unknown'),
+                question.get('question', ''),
+                is_correct,
+                difficulty,
+                'Sudden Death'
+            )
+
+            if is_correct:
                 streak += 1
-                print("\n✓ Correct! You survive... for now.")
+                total_xp_earned += xp_earned
+                print(f"\n✓ {get_correct_answer_message()} +{xp_earned} XP")
+                print("You survive... for now.")
+                if leveled_up:
+                    print(f"\n{get_level_up_message()}")
                 input("\nPress Enter to continue...")
             else:
-                # GAME OVER
+                # GAME OVER - Record session and show results
+                duration = int(time.time() - start_time)
+                tracker.record_session(course.name, 'Sudden Death', streak, streak + 1, duration)
+
                 clear_screen()
                 print_header("💀 GAME OVER 💀")
                 print(f"\n✗ Wrong! The correct answer was: {correct_answer}\n")
@@ -87,20 +115,25 @@ class SuddenDeathMode(GameMode):
                 if question.get('explanation'):
                     print(f"Explanation: {question.get('explanation')}\n")
 
-                self.show_final_results(streak, stopped_early=False)
+                self.show_final_results(streak, total_xp_earned, stopped_early=False)
                 input("\nPress Enter to continue...")
                 return
 
         # If they somehow answer all questions correctly
+        duration = int(time.time() - start_time)
+        tracker.record_session(course.name, 'Sudden Death', streak, streak, duration)
+
         clear_screen()
         print_header("🏆 PERFECT SCORE! 🏆")
         print(f"\nIncredible! You answered all {streak} questions correctly!")
+        print(f"💰 Total XP Earned: {total_xp_earned}")
         print("You are a TRUE MASTER!")
         input("\nPress Enter to continue...")
 
-    def show_final_results(self, streak: int, stopped_early: bool):
+    def show_final_results(self, streak: int, total_xp: int, stopped_early: bool):
         """Display final results with commentary."""
         print(f"Final Streak: {streak} correct answer{'s' if streak != 1 else ''}")
+        print(f"💰 Total XP Earned: {total_xp}")
         print("=" * 40)
 
         if stopped_early:

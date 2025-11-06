@@ -5,6 +5,8 @@ import time
 from .base import GameMode
 from utils.display import clear_screen, print_header, print_score
 from utils.course_loader import Course
+from utils.progress_tracker import ProgressTracker
+from utils.encouragements import get_correct_answer_message, get_wrong_answer_message, get_level_up_message
 
 
 class TimedChallengeMode(GameMode):
@@ -12,6 +14,9 @@ class TimedChallengeMode(GameMode):
 
     def play(self, course: Course):
         """Run timed challenge."""
+        tracker = ProgressTracker()
+        session_start = time.time()
+
         clear_screen()
         print_header(f"TIMED CHALLENGE - {course.name}")
 
@@ -37,6 +42,7 @@ class TimedChallengeMode(GameMode):
 
         correct = 0
         total = 0
+        total_xp_earned = 0
 
         for i, question in enumerate(questions, 1):
             clear_screen()
@@ -95,35 +101,53 @@ class TimedChallengeMode(GameMode):
                     break
 
             total += 1
+            difficulty = question.get('difficulty', 'easy')
 
             if timed_out:
-                print("\n\n⏰ Time's up!")
+                print(f"\n\n⏰ {get_wrong_answer_message()} Time's up!")
                 print(f"Correct answer: {question.get('answer', '')}")
+                tracker.record_answer(course.name, question.get('lesson', 'Unknown'),
+                                    question.get('question', ''), False, difficulty, 'Timed')
             else:
                 # Check answer
                 correct_answer = question.get('answer', '')
                 time_taken = time.time() - start_time
+                is_correct = user_answer == correct_answer
 
-                if user_answer == correct_answer:
+                xp_earned, leveled_up = tracker.record_answer(
+                    course.name, question.get('lesson', 'Unknown'),
+                    question.get('question', ''), is_correct, difficulty, 'Timed'
+                )
+
+                if is_correct:
                     correct += 1
-                    print(f"\n✓ Correct! ({time_taken:.1f}s)")
+                    total_xp_earned += xp_earned
+                    print(f"\n✓ {get_correct_answer_message()} ({time_taken:.1f}s) +{xp_earned} XP")
+                    if leveled_up:
+                        print(f"{get_level_up_message()}")
                 else:
-                    print(f"\n✗ Incorrect. Correct answer: {correct_answer}")
+                    print(f"\n✗ {get_wrong_answer_message()}")
+                    print(f"Correct answer: {correct_answer}")
 
             input("\nPress Enter for next question...")
+
+        # Record session
+        duration = int(time.time() - session_start)
+        tracker.record_session(course.name, 'Timed Challenge', correct, total, duration)
 
         # Show final score
         clear_screen()
         print_header("CHALLENGE COMPLETE")
         print_score(correct, total)
+        print(f"💰 Total XP Earned: {total_xp_earned}\n")
 
         # Performance feedback
         percentage = (correct / total * 100) if total > 0 else 0
         if percentage >= 80:
-            print("Incredible! You're lightning fast AND accurate!")
+            print("⚡ Incredible! You're lightning fast AND accurate!")
         elif percentage >= 60:
-            print("Great job under pressure!")
+            print("🏃 Great job under pressure!")
         else:
-            print("Keep practicing! Speed comes with familiarity.")
+            print("💪 Keep practicing! Speed comes with familiarity.")
 
         input("\nPress Enter to continue...")

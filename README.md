@@ -26,6 +26,28 @@ An interactive CLI-based exam review application with multiple game modes to hel
    - Build your streak
    - For the brave and masochistic
 
+### Progression System
+
+- **XP & Leveling**: Earn XP for every correct answer based on difficulty
+  - Easy questions: 10 XP
+  - Medium questions: 25 XP
+  - Hard questions: 50 XP
+  - Level up as you accumulate XP (exponential curve)
+
+- **Progress Tracking**: All your performance data is automatically saved
+  - Questions answered and accuracy per course
+  - XP earned per course
+  - Session history with timestamps
+  - Mode-specific statistics
+
+- **Leaderboard**: See your top course performances ranked by XP earned
+
+- **Encouragements**: Get random motivational (and hilarious) messages
+  - Fun encouragements when you get answers wrong: "Close enough for government work!"
+  - Celebration messages for correct answers
+  - Epic level-up notifications
+  - Streak milestones (3, 5, 7, 10+ correct in a row)
+
 ### Course System
 
 - Courses are stored as JSON files in the `courses/` directory
@@ -178,12 +200,27 @@ Exam-Review/
 - **Python Basics**: Simple intro to variables, data types, functions, control flow - 8 questions
 - **Web Development**: HTML, CSS, JavaScript fundamentals - 7 questions
 
-## Tips for Effective Study
+## Using the Application
+
+### Main Menu Options
+
+1. **Play** - Choose a course and game mode to start studying
+2. **View Stats** - See your overall performance statistics
+   - Current level and total XP
+   - Questions answered and accuracy
+   - Courses played and total sessions
+3. **View Leaderboard** - See your top course performances ranked by XP
+4. **Change Username** - Customize your player name
+5. **Exit** - Save progress and quit
+
+### Tips for Effective Study
 
 1. Start with **Flashcards** to learn new material
-2. Use **Quiz Mode** to test your understanding
+2. Use **Quiz Mode** to test your understanding and earn XP
 3. Challenge yourself with **Timed Mode** to build speed
-4. Test your mastery with **Sudden Death** mode
+4. Test your mastery with **Sudden Death** mode for maximum XP gains
+5. Check your **Stats** regularly to track improvement
+6. Build streaks for extra motivation and bragging rights!
 
 ## Requirements
 
