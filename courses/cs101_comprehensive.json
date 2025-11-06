@@ -1,0 +1,871 @@
+{
+  "name": "CS101 - Professional Programming (Comprehensive)",
+  "description": "Best practices, clean code, debugging, testing, and problem-solving with detailed questions per lesson",
+  "lessons": [
+    {"title": "W4L01: Naming that tell a story", "description": "Clear variable and function names"},
+    {"title": "W4L02: Crafting docstrings", "description": "Writing effective documentation"},
+    {"title": "W4L03: Comments with purpose", "description": "Meaningful code comments"},
+    {"title": "W4L04: Keeping it clean", "description": "Code organization"},
+    {"title": "W4L05: Instantly readable code", "description": "Formatting and style"},
+    {"title": "W4L06: Scripts to functions", "description": "Refactoring for modularity"},
+    {"title": "W4L07: Print tracing", "description": "Debugging with prints"},
+    {"title": "W4L08: Invariants as checkpoints", "description": "Using assertions"},
+    {"title": "W4L09: Reusable functions", "description": "Writing general functions"},
+    {"title": "W4L10: Debugging step by step", "description": "Systematic debugging"},
+    {"title": "W4L11: Stress it to the edge", "description": "Edge case testing"},
+    {"title": "W4L12: Pushing the limits", "description": "Boundary testing"},
+    {"title": "W4L13: Validating inputs", "description": "Input validation"},
+    {"title": "W4L14: Well-placed errors", "description": "Error handling"},
+    {"title": "W4L15: Refactoring with confidence", "description": "Code improvement"},
+    {"title": "W4L16: Making sure nothing breaks", "description": "Testing after changes"},
+    {"title": "W5L01: Balancing planning and coding", "description": "Planning strategy"},
+    {"title": "W5L02: Breaking the problem", "description": "Problem decomposition"},
+    {"title": "W5L03: Hierarchy in pseudocode", "description": "Structured planning"},
+    {"title": "W5L04: Turning rules into code", "description": "Implementation"},
+    {"title": "W5L05: Sketching flow", "description": "Flow diagrams"},
+    {"title": "W5L06: Common solution patterns", "description": "Design patterns"},
+    {"title": "W5L07: Reviewing the plan", "description": "Plan validation"},
+    {"title": "W5L08: Plan to working machine", "description": "Implementation"},
+    {"title": "W5L09: Comments connecting to pseudocode", "description": "Code documentation"},
+    {"title": "W5L10: Function stubs for structure", "description": "Skeleton code"},
+    {"title": "W5L11: Building incrementally", "description": "Iterative development"},
+    {"title": "W5L12: Test tables for plans", "description": "Test planning"},
+    {"title": "W5L13: Dry running plans", "description": "Manual execution"},
+    {"title": "W5L14: Integrating logic", "description": "Combining components"},
+    {"title": "W5L15: Demonstrating the app", "description": "Presenting work"},
+    {"title": "W6L01: Clear feature brief", "description": "Requirements gathering"},
+    {"title": "W6L02: Purpose vs technical details", "description": "Abstraction levels"},
+    {"title": "W6L03: Structured problem statement", "description": "Problem definition"},
+    {"title": "W6L04: Example inputs and outputs", "description": "Test cases"},
+    {"title": "W6L05: Breaking into subproblems", "description": "Decomposition"},
+    {"title": "W6L06: Subproblem inputs and outputs", "description": "Interface design"},
+    {"title": "W6L07: Sequencing subproblems", "description": "Execution order"},
+    {"title": "W6L08: Matching patterns", "description": "Pattern recognition"},
+    {"title": "W6L09: Prioritizing by risk", "description": "Risk management"},
+    {"title": "W6L10: Explaining prioritization", "description": "Justification"},
+    {"title": "W6L11: Assembling pipelines", "description": "Function composition"},
+    {"title": "W6L12: Case study breakdown", "description": "Real example"},
+    {"title": "W6L13: Full problem statement", "description": "Complete specification"}
+  ],
+  "questions": [
+    {
+      "question": "What makes a variable name 'tell a story'?",
+      "type": "multiple_choice",
+      "choices": ["Describes what it represents clearly", "Is very long", "Uses abbreviations", "Contains numbers"],
+      "answer": "Describes what it represents clearly",
+      "explanation": "Good names like 'total_price' are self-documenting",
+      "lesson": "W4L01: Naming that tell a story",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which is better: 'tp' or 'total_price'?",
+      "type": "multiple_choice",
+      "choices": ["total_price", "tp", "Both equal", "Neither"],
+      "answer": "total_price",
+      "explanation": "Full words are clearer than abbreviations",
+      "lesson": "W4L01: Naming that tell a story",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What naming convention does Python use for variables?",
+      "type": "multiple_choice",
+      "choices": ["snake_case", "camelCase", "PascalCase", "kebab-case"],
+      "answer": "snake_case",
+      "explanation": "Python uses lowercase with underscores",
+      "lesson": "W4L01: Naming that tell a story",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a docstring explain?",
+      "type": "multiple_choice",
+      "choices": ["Why the function exists and what it does", "How the code works line by line", "Who wrote it", "When it was created"],
+      "answer": "Why the function exists and what it does",
+      "explanation": "Docstrings explain purpose and usage, not implementation",
+      "lesson": "W4L02: Crafting docstrings",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Where does a docstring go?",
+      "type": "multiple_choice",
+      "choices": ["First line after function definition", "Before function", "At end of function", "Anywhere"],
+      "answer": "First line after function definition",
+      "explanation": "Docstrings go right after 'def' line in triple quotes",
+      "lesson": "W4L02: Crafting docstrings",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a good docstring include?",
+      "type": "multiple_choice",
+      "choices": ["Parameters, return value, purpose", "Only parameter types", "Code examples only", "Author name"],
+      "answer": "Parameters, return value, purpose",
+      "explanation": "Complete docstrings document inputs, outputs, and intent",
+      "lesson": "W4L02: Crafting docstrings",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When should you write comments?",
+      "type": "multiple_choice",
+      "choices": ["To explain WHY, not WHAT", "For every line", "Never", "Only for errors"],
+      "answer": "To explain WHY, not WHAT",
+      "explanation": "Comments explain intent and rationale, not obvious code",
+      "lesson": "W4L03: Comments with purpose",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which comment is better for 'x = x + 1'?",
+      "type": "multiple_choice",
+      "choices": ["# Increment counter for next iteration", "# Add 1 to x", "# x = x + 1", "No comment needed"],
+      "answer": "# Increment counter for next iteration",
+      "explanation": "Explains WHY we increment, not just WHAT we do",
+      "lesson": "W4L03: Comments with purpose",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'keeping it clean' mean?",
+      "type": "multiple_choice",
+      "choices": ["Organized, readable code", "Deleting old code", "Short code", "Fast code"],
+      "answer": "Organized, readable code",
+      "explanation": "Clean code is well-structured and easy to understand",
+      "lesson": "W4L04: Keeping it clean",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What helps keep code clean?",
+      "type": "multiple_choice",
+      "choices": ["Consistent formatting and logical organization", "Removing all comments", "One-letter variables", "Long lines"],
+      "answer": "Consistent formatting and logical organization",
+      "explanation": "Consistency and structure improve readability",
+      "lesson": "W4L04: Keeping it clean",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What makes code 'instantly readable'?",
+      "type": "multiple_choice",
+      "choices": ["Clear names, proper spacing, logical structure", "Short variable names", "No comments", "Minimal whitespace"],
+      "answer": "Clear names, proper spacing, logical structure",
+      "explanation": "Visual structure and clarity enable quick comprehension",
+      "lesson": "W4L05: Instantly readable code",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How much indentation does Python use?",
+      "type": "multiple_choice",
+      "choices": ["4 spaces", "2 spaces", "1 tab", "8 spaces"],
+      "answer": "4 spaces",
+      "explanation": "PEP 8 recommends 4 spaces for indentation",
+      "lesson": "W4L05: Instantly readable code",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why convert long scripts into functions?",
+      "type": "multiple_choice",
+      "choices": ["Reusability, testability, clarity", "Make file bigger", "Slow down code", "Required by Python"],
+      "answer": "Reusability, testability, clarity",
+      "explanation": "Functions enable modular, maintainable code",
+      "lesson": "W4L06: Scripts to functions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a sign that code should be extracted into a function?",
+      "type": "multiple_choice",
+      "choices": ["Repeated code or distinct task", "Code is short", "Code is fast", "Code has variables"],
+      "answer": "Repeated code or distinct task",
+      "explanation": "Repetition and cohesive tasks are good candidates for functions",
+      "lesson": "W4L06: Scripts to functions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is print tracing?",
+      "type": "multiple_choice",
+      "choices": ["Adding prints to show variable values", "Printing error messages", "Formatting output", "Removing prints"],
+      "answer": "Adding prints to show variable values",
+      "explanation": "Print statements reveal program state during execution",
+      "lesson": "W4L07: Print tracing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Where should you place debug prints?",
+      "type": "multiple_choice",
+      "choices": ["Before and after suspected problem areas", "Only at start", "Only at end", "Randomly"],
+      "answer": "Before and after suspected problem areas",
+      "explanation": "Strategic placement helps isolate bugs",
+      "lesson": "W4L07: Print tracing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is an invariant?",
+      "type": "multiple_choice",
+      "choices": ["Condition that should always be true", "Variable that never changes", "Constant value", "Function parameter"],
+      "answer": "Condition that should always be true",
+      "explanation": "Invariants are assertions about program state",
+      "lesson": "W4L08: Invariants as checkpoints",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you check invariants in Python?",
+      "type": "multiple_choice",
+      "choices": ["assert statement", "if statement", "print statement", "return statement"],
+      "answer": "assert statement",
+      "explanation": "assert raises error if condition is False",
+      "lesson": "W4L08: Invariants as checkpoints",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What makes a function reusable?",
+      "type": "multiple_choice",
+      "choices": ["No side effects, clear interface, single purpose", "Long name", "Many parameters", "Global variables"],
+      "answer": "No side effects, clear interface, single purpose",
+      "explanation": "Pure functions with focused purpose are highly reusable",
+      "lesson": "W4L09: Reusable functions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should a reusable function avoid?",
+      "type": "multiple_choice",
+      "choices": ["Global state and side effects", "Parameters", "Return values", "Docstrings"],
+      "answer": "Global state and side effects",
+      "explanation": "Dependencies on external state reduce reusability",
+      "lesson": "W4L09: Reusable functions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the first step in systematic debugging?",
+      "type": "multiple_choice",
+      "choices": ["Reproduce the bug consistently", "Fix it immediately", "Rewrite everything", "Ask for help"],
+      "answer": "Reproduce the bug consistently",
+      "explanation": "Consistent reproduction enables systematic investigation",
+      "lesson": "W4L10: Debugging step by step",
+      "difficulty": "medium"
+    },
+    {
+      "question": "After reproducing a bug, what should you do?",
+      "type": "multiple_choice",
+      "choices": ["Isolate the problem area", "Start over", "Give up", "Commit the code"],
+      "answer": "Isolate the problem area",
+      "explanation": "Narrow down where the bug occurs before fixing",
+      "lesson": "W4L10: Debugging step by step",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are edge cases?",
+      "type": "multiple_choice",
+      "choices": ["Extreme or boundary values", "Common inputs", "Error messages", "Function names"],
+      "answer": "Extreme or boundary values",
+      "explanation": "Edge cases test limits: empty, zero, maximum, negative",
+      "lesson": "W4L11: Stress it to the edge",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which is an edge case for a list function?",
+      "type": "multiple_choice",
+      "choices": ["Empty list", "List with 5 items", "List with strings", "List with numbers"],
+      "answer": "Empty list",
+      "explanation": "Empty inputs are classic edge cases",
+      "lesson": "W4L11: Stress it to the edge",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does boundary testing check?",
+      "type": "multiple_choice",
+      "choices": ["Behavior at limits of valid ranges", "Average cases", "Random values", "String formatting"],
+      "answer": "Behavior at limits of valid ranges",
+      "explanation": "Test min, max, and just outside valid ranges",
+      "lesson": "W4L12: Pushing the limits",
+      "difficulty": "medium"
+    },
+    {
+      "question": "For a function accepting 1-100, what boundaries should you test?",
+      "type": "multiple_choice",
+      "choices": ["0, 1, 100, 101", "50, 75", "1, 100", "Any numbers"],
+      "answer": "0, 1, 100, 101",
+      "explanation": "Test both edges and just outside the valid range",
+      "lesson": "W4L12: Pushing the limits",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why validate user input?",
+      "type": "multiple_choice",
+      "choices": ["Prevent errors and ensure data quality", "Annoy users", "Slow down program", "Not necessary"],
+      "answer": "Prevent errors and ensure data quality",
+      "explanation": "Validation catches problems before they cause crashes",
+      "lesson": "W4L13: Validating inputs",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should you validate in numeric input?",
+      "type": "multiple_choice",
+      "choices": ["Type, range, format", "Only type", "Only value", "Nothing"],
+      "answer": "Type, range, format",
+      "explanation": "Check it's a number, within bounds, and properly formatted",
+      "lesson": "W4L13: Validating inputs",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When should you raise errors?",
+      "type": "multiple_choice",
+      "choices": ["When preconditions aren't met", "Always", "Never", "Randomly"],
+      "answer": "When preconditions aren't met",
+      "explanation": "Errors signal invalid state or usage",
+      "lesson": "W4L14: Well-placed errors",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's better than crashing: error or wrong result?",
+      "type": "multiple_choice",
+      "choices": ["Error (fail fast)", "Wrong result", "Both equally bad", "Neither matters"],
+      "answer": "Error (fail fast)",
+      "explanation": "Explicit errors are better than silent failures",
+      "lesson": "W4L14: Well-placed errors",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is refactoring?",
+      "type": "multiple_choice",
+      "choices": ["Improving code structure without changing behavior", "Adding features", "Fixing bugs", "Deleting code"],
+      "answer": "Improving code structure without changing behavior",
+      "explanation": "Refactoring enhances internal quality while preserving functionality",
+      "lesson": "W4L15: Refactoring with confidence",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When is the best time to refactor?",
+      "type": "multiple_choice",
+      "choices": ["When tests pass and code works", "During debugging", "Before writing tests", "Never"],
+      "answer": "When tests pass and code works",
+      "explanation": "Refactor from a working state with test coverage",
+      "lesson": "W4L15: Refactoring with confidence",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you ensure refactoring doesn't break code?",
+      "type": "multiple_choice",
+      "choices": ["Run tests before and after", "Hope for the best", "Visual inspection", "Wait and see"],
+      "answer": "Run tests before and after",
+      "explanation": "Tests verify behavior remains unchanged",
+      "lesson": "W4L16: Making sure nothing breaks",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should you do after any code change?",
+      "type": "multiple_choice",
+      "choices": ["Test thoroughly", "Commit immediately", "Deploy to production", "Delete old code"],
+      "answer": "Test thoroughly",
+      "explanation": "Always verify changes didn't introduce bugs",
+      "lesson": "W4L16: Making sure nothing breaks",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's the risk of over-planning?",
+      "type": "multiple_choice",
+      "choices": ["Wasting time on details that will change", "Code is too good", "Too fast", "Too simple"],
+      "answer": "Wasting time on details that will change",
+      "explanation": "Excessive upfront planning delays learning from implementation",
+      "lesson": "W5L01: Balancing planning and coding",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the risk of under-planning?",
+      "type": "multiple_choice",
+      "choices": ["Getting lost and writing unfocused code", "Code is too fast", "Code is too short", "Code is too good"],
+      "answer": "Getting lost and writing unfocused code",
+      "explanation": "No plan leads to confusion and rework",
+      "lesson": "W5L01: Balancing planning and coding",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'breaking the problem' mean?",
+      "type": "multiple_choice",
+      "choices": ["Dividing into smaller subproblems", "Finding bugs", "Deleting code", "Making it harder"],
+      "answer": "Dividing into smaller subproblems",
+      "explanation": "Decomposition makes complex problems manageable",
+      "lesson": "W5L02: Breaking the problem",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why break problems into pieces?",
+      "type": "multiple_choice",
+      "choices": ["Easier to solve, test, and understand", "Make more work", "Confuse yourself", "Required by Python"],
+      "answer": "Easier to solve, test, and understand",
+      "explanation": "Small problems are less overwhelming and more tractable",
+      "lesson": "W5L02: Breaking the problem",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does hierarchy in pseudocode show?",
+      "type": "multiple_choice",
+      "choices": ["Relationships between steps and sub-steps", "Importance ranking", "Time order", "Difficulty"],
+      "answer": "Relationships between steps and sub-steps",
+      "explanation": "Indentation shows which steps are part of larger steps",
+      "lesson": "W5L03: Hierarchy in pseudocode",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you show a sub-step in pseudocode?",
+      "type": "multiple_choice",
+      "choices": ["Indent it under the parent step", "Put it first", "Use ALL CAPS", "Number it higher"],
+      "answer": "Indent it under the parent step",
+      "explanation": "Indentation reveals logical structure",
+      "lesson": "W5L03: Hierarchy in pseudocode",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you turn rules into code?",
+      "type": "multiple_choice",
+      "choices": ["Translate conditions to if/elif/else", "Memorize rules", "Ignore rules", "Write randomly"],
+      "answer": "Translate conditions to if/elif/else",
+      "explanation": "Business rules become conditional logic",
+      "lesson": "W5L04: Turning rules into code",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What programming construct matches 'if condition A, do X, otherwise do Y'?",
+      "type": "multiple_choice",
+      "choices": ["if/else", "for loop", "while loop", "function"],
+      "answer": "if/else",
+      "explanation": "Decision rules map directly to if/else",
+      "lesson": "W5L04: Turning rules into code",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What do flow diagrams show?",
+      "type": "multiple_choice",
+      "choices": ["Decisions and paths through logic", "Variable values", "Code syntax", "Error messages"],
+      "answer": "Decisions and paths through logic",
+      "explanation": "Flow charts visualize program control flow",
+      "lesson": "W5L05: Sketching flow",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What shape represents a decision in flowcharts?",
+      "type": "multiple_choice",
+      "choices": ["Diamond", "Rectangle", "Circle", "Arrow"],
+      "answer": "Diamond",
+      "explanation": "Diamonds show decision points with multiple paths",
+      "lesson": "W5L05: Sketching flow",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the counter pattern?",
+      "type": "multiple_choice",
+      "choices": ["Initialize to 0, increment in loop", "Count backwards", "Count to 10", "Random counting"],
+      "answer": "Initialize to 0, increment in loop",
+      "explanation": "Common pattern: count = 0, then count += 1 in loop",
+      "lesson": "W5L06: Common solution patterns",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the accumulator pattern?",
+      "type": "multiple_choice",
+      "choices": ["Initialize to 0, add values in loop", "Initialize to 1, multiply", "Initialize to empty list", "Random values"],
+      "answer": "Initialize to 0, add values in loop",
+      "explanation": "Sum pattern: total = 0, then total += value in loop",
+      "lesson": "W5L06: Common solution patterns",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the filter pattern?",
+      "type": "multiple_choice",
+      "choices": ["Select items matching a condition", "Remove all items", "Sort items", "Count items"],
+      "answer": "Select items matching a condition",
+      "explanation": "Filter keeps only items that pass a test",
+      "lesson": "W5L06: Common solution patterns",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why review your plan before coding?",
+      "type": "multiple_choice",
+      "choices": ["Catch logical errors early", "Waste time", "Confuse yourself", "Make it longer"],
+      "answer": "Catch logical errors early",
+      "explanation": "Finding flaws in planning is cheaper than in code",
+      "lesson": "W5L07: Reviewing the plan",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should you check when reviewing pseudocode?",
+      "type": "multiple_choice",
+      "choices": ["Logic, completeness, edge cases", "Spelling", "Color", "Font size"],
+      "answer": "Logic, completeness, edge cases",
+      "explanation": "Verify the plan is sound and handles all cases",
+      "lesson": "W5L07: Reviewing the plan",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the first step translating pseudocode to code?",
+      "type": "multiple_choice",
+      "choices": ["Create function signatures", "Write everything at once", "Test immediately", "Skip planning"],
+      "answer": "Create function signatures",
+      "explanation": "Define structure before implementation",
+      "lesson": "W5L08: Plan to working machine",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should you translate pseudocode line-by-line?",
+      "type": "multiple_choice",
+      "choices": ["Yes, it guides implementation", "No, ignore it", "Sometimes", "Never"],
+      "answer": "Yes, it guides implementation",
+      "explanation": "Pseudocode is a blueprint for actual code",
+      "lesson": "W5L08: Plan to working machine",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why keep comments that reference pseudocode?",
+      "type": "multiple_choice",
+      "choices": ["Links code to original plan", "Makes file bigger", "Looks professional", "Required by Python"],
+      "answer": "Links code to original plan",
+      "explanation": "Comments preserve planning rationale",
+      "lesson": "W5L09: Comments connecting to pseudocode",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should comments explain when derived from pseudocode?",
+      "type": "multiple_choice",
+      "choices": ["The high-level step being implemented", "Every variable", "Python syntax", "Nothing"],
+      "answer": "The high-level step being implemented",
+      "explanation": "Map code sections back to plan steps",
+      "lesson": "W5L09: Comments connecting to pseudocode",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a function stub?",
+      "type": "multiple_choice",
+      "choices": ["Function signature with placeholder body", "Broken function", "Complete function", "Function comment"],
+      "answer": "Function signature with placeholder body",
+      "explanation": "Stubs define interface before implementation",
+      "lesson": "W5L10: Function stubs for structure",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should a stub return?",
+      "type": "multiple_choice",
+      "choices": ["Simple placeholder value", "Nothing", "Error", "Random value"],
+      "answer": "Simple placeholder value",
+      "explanation": "Return None, 0, or empty collection as placeholder",
+      "lesson": "W5L10: Function stubs for structure",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'building incrementally' mean?",
+      "type": "multiple_choice",
+      "choices": ["Add small pieces and test each", "Write everything at once", "Write random code", "Copy paste code"],
+      "answer": "Add small pieces and test each",
+      "explanation": "Incremental development catches errors early",
+      "lesson": "W5L11: Building incrementally",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why test after each small addition?",
+      "type": "multiple_choice",
+      "choices": ["Know exactly what broke if something fails", "Waste time", "Make code slower", "Confuse yourself"],
+      "answer": "Know exactly what broke if something fails",
+      "explanation": "Frequent testing isolates problems to recent changes",
+      "lesson": "W5L11: Building incrementally",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a test table?",
+      "type": "multiple_choice",
+      "choices": ["Table with inputs, expected outputs, actual outputs", "Database table", "HTML table", "Lookup table"],
+      "answer": "Table with inputs, expected outputs, actual outputs",
+      "explanation": "Organized way to track test cases and results",
+      "lesson": "W5L12: Test tables for plans",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What columns should a test table have?",
+      "type": "multiple_choice",
+      "choices": ["Input, expected output, actual output, pass/fail", "Just inputs", "Just outputs", "Random data"],
+      "answer": "Input, expected output, actual output, pass/fail",
+      "explanation": "Track all test case details systematically",
+      "lesson": "W5L12: Test tables for plans",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is dry running?",
+      "type": "multiple_choice",
+      "choices": ["Manually tracing code with test values", "Running without computer", "Testing in production", "Deleting code"],
+      "answer": "Manually tracing code with test values",
+      "explanation": "Walk through logic step by step on paper",
+      "lesson": "W5L13: Dry running plans",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why dry run pseudocode?",
+      "type": "multiple_choice",
+      "choices": ["Find logic errors before coding", "Waste time", "Confuse yourself", "Not useful"],
+      "answer": "Find logic errors before coding",
+      "explanation": "Catch flaws in planning phase",
+      "lesson": "W5L13: Dry running plans",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does integrating logic mean?",
+      "type": "multiple_choice",
+      "choices": ["Combining separate functions into complete solution", "Deleting functions", "Renaming functions", "Testing functions"],
+      "answer": "Combining separate functions into complete solution",
+      "explanation": "Connect components to build full application",
+      "lesson": "W5L14: Integrating logic",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should you test during integration?",
+      "type": "multiple_choice",
+      "choices": ["How components work together", "Only individual functions", "Only edge cases", "Nothing"],
+      "answer": "How components work together",
+      "explanation": "Integration testing verifies interfaces between parts",
+      "lesson": "W5L14: Integrating logic",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should you demo when showing your work?",
+      "type": "multiple_choice",
+      "choices": ["Key features and edge cases", "Only happy path", "Only errors", "Source code only"],
+      "answer": "Key features and edge cases",
+      "explanation": "Show normal use and interesting edge cases",
+      "lesson": "W5L15: Demonstrating the app",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why demo edge cases?",
+      "type": "multiple_choice",
+      "choices": ["Shows robust error handling", "Shows bugs", "Wastes time", "Confuses audience"],
+      "answer": "Shows robust error handling",
+      "explanation": "Demonstrating edge cases shows thoroughness",
+      "lesson": "W5L15: Demonstrating the app",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a feature brief?",
+      "type": "multiple_choice",
+      "choices": ["Short description of what and why", "Technical implementation", "Code snippet", "Bug report"],
+      "answer": "Short description of what and why",
+      "explanation": "High-level summary of feature purpose",
+      "lesson": "W6L01: Clear feature brief",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a feature brief focus on?",
+      "type": "multiple_choice",
+      "choices": ["User value and goals", "Implementation details", "Code structure", "Variable names"],
+      "answer": "User value and goals",
+      "explanation": "Briefs explain purpose before diving into how",
+      "lesson": "W6L01: Clear feature brief",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is 'purpose' vs 'technical details'?",
+      "type": "multiple_choice",
+      "choices": ["Purpose is what/why; technical is how", "No difference", "Purpose is harder", "Technical is better"],
+      "answer": "Purpose is what/why; technical is how",
+      "explanation": "Separate goal from implementation approach",
+      "lesson": "W6L02: Purpose vs technical details",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which comes first: purpose or implementation?",
+      "type": "multiple_choice",
+      "choices": ["Purpose", "Implementation", "Both together", "Neither"],
+      "answer": "Purpose",
+      "explanation": "Understand the problem before solving it",
+      "lesson": "W6L02: Purpose vs technical details",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a problem statement include?",
+      "type": "multiple_choice",
+      "choices": ["Goal, constraints, inputs, outputs", "Just the goal", "Just the code", "Just examples"],
+      "answer": "Goal, constraints, inputs, outputs",
+      "explanation": "Complete specification prevents misunderstandings",
+      "lesson": "W6L03: Structured problem statement",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why include constraints in problem statement?",
+      "type": "multiple_choice",
+      "choices": ["Defines boundaries and limitations", "Makes it harder", "Wastes space", "Not important"],
+      "answer": "Defines boundaries and limitations",
+      "explanation": "Constraints clarify what's in and out of scope",
+      "lesson": "W6L03: Structured problem statement",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why provide example inputs and outputs?",
+      "type": "multiple_choice",
+      "choices": ["Makes requirements concrete and testable", "Wastes time", "Confuses readers", "Not necessary"],
+      "answer": "Makes requirements concrete and testable",
+      "explanation": "Examples clarify abstract requirements",
+      "lesson": "W6L04: Example inputs and outputs",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How many examples should you provide?",
+      "type": "multiple_choice",
+      "choices": ["Enough to cover normal and edge cases", "Just one", "Hundreds", "None"],
+      "answer": "Enough to cover normal and edge cases",
+      "explanation": "Cover typical cases and important boundaries",
+      "lesson": "W6L04: Example inputs and outputs",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you break into subproblems?",
+      "type": "multiple_choice",
+      "choices": ["Identify independent, cohesive pieces", "Random division", "One big problem", "Alphabetically"],
+      "answer": "Identify independent, cohesive pieces",
+      "explanation": "Find natural boundaries and responsibilities",
+      "lesson": "W6L05: Breaking into subproblems",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What makes a good subproblem?",
+      "type": "multiple_choice",
+      "choices": ["Clear inputs, outputs, single responsibility", "Very large", "Very small", "Random"],
+      "answer": "Clear inputs, outputs, single responsibility",
+      "explanation": "Well-defined, focused subproblems are easiest to solve",
+      "lesson": "W6L05: Breaking into subproblems",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why define subproblem interfaces?",
+      "type": "multiple_choice",
+      "choices": ["Clarifies how pieces connect", "Wastes time", "Makes it harder", "Not needed"],
+      "answer": "Clarifies how pieces connect",
+      "explanation": "Interfaces define contracts between components",
+      "lesson": "W6L06: Subproblem inputs and outputs",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a function signature?",
+      "type": "multiple_choice",
+      "choices": ["Function name and parameters", "Function body", "Function comment", "Return value"],
+      "answer": "Function name and parameters",
+      "explanation": "Signature defines the interface to a function",
+      "lesson": "W6L06: Subproblem inputs and outputs",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why does subproblem order matter?",
+      "type": "multiple_choice",
+      "choices": ["Some depend on outputs of others", "It doesn't", "Alphabetical order", "Random order"],
+      "answer": "Some depend on outputs of others",
+      "explanation": "Dependency order: validate before process, process before display",
+      "lesson": "W6L07: Sequencing subproblems",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's a dependency in sequencing?",
+      "type": "multiple_choice",
+      "choices": ["One step needs output from another", "Random connection", "No connection", "Parallel steps"],
+      "answer": "One step needs output from another",
+      "explanation": "Dependencies create ordering constraints",
+      "lesson": "W6L07: Sequencing subproblems",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does pattern matching mean in problem solving?",
+      "type": "multiple_choice",
+      "choices": ["Recognizing problems similar to known solutions", "String matching", "Regex", "Copying code"],
+      "answer": "Recognizing problems similar to known solutions",
+      "explanation": "Leverage known patterns to solve new problems",
+      "lesson": "W6L08: Matching patterns",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why recognize solution patterns?",
+      "type": "multiple_choice",
+      "choices": ["Faster problem solving with proven approaches", "Show off knowledge", "Waste time", "Not useful"],
+      "answer": "Faster problem solving with proven approaches",
+      "explanation": "Patterns provide battle-tested blueprints",
+      "lesson": "W6L08: Matching patterns",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'prioritizing by risk' mean?",
+      "type": "multiple_choice",
+      "choices": ["Do uncertain/difficult tasks first", "Do easy tasks first", "Random order", "Skip risky tasks"],
+      "answer": "Do uncertain/difficult tasks first",
+      "explanation": "Tackle unknowns early to avoid late surprises",
+      "lesson": "W6L09: Prioritizing by risk",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why do risky tasks first?",
+      "type": "multiple_choice",
+      "choices": ["Learn and fail early when there's time to recover", "They're fun", "They're easy", "No reason"],
+      "answer": "Learn and fail early when there's time to recover",
+      "explanation": "Early failures are cheaper than late failures",
+      "lesson": "W6L09: Prioritizing by risk",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When explaining priorities, what should you justify?",
+      "type": "multiple_choice",
+      "choices": ["Why this order reduces risk or maximizes learning", "Why you like it", "Nothing", "Random reasons"],
+      "answer": "Why this order reduces risk or maximizes learning",
+      "explanation": "Rational prioritization has clear reasoning",
+      "lesson": "W6L10: Explaining prioritization",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What factors influence prioritization?",
+      "type": "multiple_choice",
+      "choices": ["Risk, dependencies, value, effort", "Alphabetical order", "Personal preference", "Random choice"],
+      "answer": "Risk, dependencies, value, effort",
+      "explanation": "Multiple factors determine optimal order",
+      "lesson": "W6L10: Explaining prioritization",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is a function pipeline?",
+      "type": "multiple_choice",
+      "choices": ["Output of one function feeds into next", "Many functions", "Long function", "Broken functions"],
+      "answer": "Output of one function feeds into next",
+      "explanation": "Chain functions: process(validate(load(data)))",
+      "lesson": "W6L11: Assembling pipelines",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's a benefit of pipelines?",
+      "type": "multiple_choice",
+      "choices": ["Clear data transformations in stages", "Faster code", "Shorter code", "No benefits"],
+      "answer": "Clear data transformations in stages",
+      "explanation": "Each stage has single responsibility and is testable",
+      "lesson": "W6L11: Assembling pipelines",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a case study in problem solving?",
+      "type": "multiple_choice",
+      "choices": ["Real example analyzed in detail", "Quick example", "Theoretical problem", "Random problem"],
+      "answer": "Real example analyzed in detail",
+      "explanation": "Case studies show complete problem-solving process",
+      "lesson": "W6L12: Case study breakdown",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why study case study breakdowns?",
+      "type": "multiple_choice",
+      "choices": ["Learn problem-solving process from examples", "Memorize solutions", "Waste time", "Not useful"],
+      "answer": "Learn problem-solving process from examples",
+      "explanation": "See how experts approach and decompose problems",
+      "lesson": "W6L12: Case study breakdown",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should a complete problem statement include?",
+      "type": "multiple_choice",
+      "choices": ["Goal, constraints, inputs, outputs, examples, success criteria", "Just the goal", "Just examples", "Just code"],
+      "answer": "Goal, constraints, inputs, outputs, examples, success criteria",
+      "explanation": "Comprehensive specification prevents ambiguity",
+      "lesson": "W6L13: Full problem statement",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why include success criteria?",
+      "type": "multiple_choice",
+      "choices": ["Defines when solution is acceptable", "Not important", "Wastes space", "Confuses people"],
+      "answer": "Defines when solution is acceptable",
+      "explanation": "Clear criteria determine when you're done",
+      "lesson": "W6L13: Full problem statement",
+      "difficulty": "medium"
+    }
+  ]
+}
