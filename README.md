@@ -133,6 +133,9 @@ Exam-Review/
 ├── review.py              # Main entry point
 ├── exam_game.sh          # Shell script wrapper
 ├── courses/              # Course JSON files
+│   ├── cs101.json
+│   ├── psyc100.json
+│   ├── py101.json
 │   ├── python_basics.json
 │   └── web_development.json
 ├── game_modes/           # Game mode implementations
@@ -148,10 +151,18 @@ Exam-Review/
     └── display.py
 ```
 
-## Example Courses Included
+## Courses Included
 
-- **Python Basics**: Variables, data types, functions, control flow
-- **Web Development**: HTML, CSS, JavaScript fundamentals
+### Programming Courses
+- **PY101 - Python Programming Fundamentals**: Complete course covering foundations (variables, operators, functions), control flow (conditionals, loops, lists), and data structures (strings, dicts, nested structures) - 28 questions
+- **CS101 - Professional Programming Practices**: Best practices for clean code, documentation, debugging, testing, planning, pseudocode, and problem decomposition - 28 questions
+
+### Psychology Course
+- **PSYC100 - Introduction to Psychology**: Social influence (obedience, conformity, bystander effect), professional success psychology (motivation, goal-setting, stress management), and cognitive biases (heuristics, anchoring, Dunning-Kruger effect) - 28 questions
+
+### Example Courses
+- **Python Basics**: Simple intro to variables, data types, functions, control flow - 8 questions
+- **Web Development**: HTML, CSS, JavaScript fundamentals - 7 questions
 
 ## Tips for Effective Study
 

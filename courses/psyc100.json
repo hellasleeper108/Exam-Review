@@ -1,0 +1,248 @@
+{
+  "name": "PSYC100 - Introduction to Psychology",
+  "description": "Social influence, motivation, cognitive biases, and the psychology of decision-making",
+  "lessons": [
+    {"title": "Week 7: The Invisible Forces", "description": "Social psychology, conformity, obedience, and influence"},
+    {"title": "Week 8: Professional Success Psychology", "description": "Motivation theories, goal-setting, stress, and psychological safety"},
+    {"title": "Week 9: The Irrational Mind", "description": "Cognitive biases, heuristics, and decision-making"}
+  ],
+  "questions": [
+    {
+      "question": "What did Stanley Milgram's obedience experiments demonstrate?",
+      "type": "flashcard",
+      "answer": "People will obey authority figures even when asked to harm others, showing the power of situational pressure over individual morality",
+      "explanation": "65% of participants gave lethal shocks when instructed by an authority figure",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the fundamental attribution error?",
+      "type": "multiple_choice",
+      "choices": ["Blaming situations for our failures", "Overestimating personality and underestimating situation when judging others", "Thinking we're better than average", "Forgetting information"],
+      "answer": "Overestimating personality and underestimating situation when judging others",
+      "explanation": "We attribute others' behavior to their character while ignoring situational factors",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What did Solomon Asch's line experiments show?",
+      "type": "flashcard",
+      "answer": "People conform to group opinions even when the group is obviously wrong; about 75% conformed at least once",
+      "explanation": "The conformity effect shows how social pressure influences our judgments",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the bystander effect?",
+      "type": "multiple_choice",
+      "choices": ["Helping more when alone", "Less likely to help when others are present", "Standing on the side", "Watching accidents"],
+      "answer": "Less likely to help when others are present",
+      "explanation": "Diffusion of responsibility makes individuals less likely to act when in groups",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is cognitive dissonance?",
+      "type": "flashcard",
+      "answer": "Mental discomfort from holding contradictory beliefs/attitudes, leading us to change beliefs to reduce discomfort",
+      "explanation": "We lie to ourselves to maintain consistency between beliefs and actions",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does social influence work in the digital age?",
+      "type": "multiple_choice",
+      "choices": ["It doesn't apply online", "Amplified through echo chambers, viral content, and algorithmic filtering", "Weakened by anonymity", "Only affects teenagers"],
+      "answer": "Amplified through echo chambers, viral content, and algorithmic filtering",
+      "explanation": "Digital platforms intensify conformity and influence through likes, shares, and recommendations",
+      "lesson": "Week 7: The Invisible Forces",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the five levels of Maslow's hierarchy of needs?",
+      "type": "flashcard",
+      "answer": "Bottom to top: Physiological, Safety, Love/Belonging, Esteem, Self-actualization",
+      "explanation": "Lower needs must be met before higher needs motivate behavior",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the three components of self-determination theory?",
+      "type": "multiple_choice",
+      "choices": ["Money, power, fame", "Autonomy, competence, relatedness", "Food, sleep, shelter", "Thinking, feeling, acting"],
+      "answer": "Autonomy, competence, relatedness",
+      "explanation": "These three psychological needs drive intrinsic motivation",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What makes goals effective according to goal-setting theory?",
+      "type": "flashcard",
+      "answer": "Specific, measurable, challenging but achievable, with commitment and feedback",
+      "explanation": "SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) improve performance",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is self-efficacy?",
+      "type": "multiple_choice",
+      "choices": ["Being selfish", "Belief in your ability to succeed at specific tasks", "Self-esteem", "Efficiency at work"],
+      "answer": "Belief in your ability to succeed at specific tasks",
+      "explanation": "Self-efficacy affects which tasks we attempt and how much effort we invest",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between growth and fixed mindset?",
+      "type": "flashcard",
+      "answer": "Growth mindset: abilities can be developed through effort. Fixed mindset: abilities are innate and unchangeable",
+      "explanation": "Growth mindset leads to embracing challenges; fixed mindset leads to avoiding failure",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is locus of control?",
+      "type": "multiple_choice",
+      "choices": ["Brain region for control", "Belief about whether you control outcomes (internal) or external forces do (external)", "Controlling others", "Self-control"],
+      "answer": "Belief about whether you control outcomes (internal) or external forces do (external)",
+      "explanation": "Internal locus: 'I control my destiny'. External locus: 'Life happens to me'",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is flow theory?",
+      "type": "flashcard",
+      "answer": "Optimal experience when challenge matches skill level; characterized by deep focus, time distortion, and intrinsic enjoyment",
+      "explanation": "Flow occurs in the 'zone' between boredom (too easy) and anxiety (too hard)",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does the ABCDE model help with?",
+      "type": "multiple_choice",
+      "choices": ["Alphabet learning", "Managing stress by examining beliefs about events", "Goal setting", "Memory"],
+      "answer": "Managing stress by examining beliefs about events",
+      "explanation": "Adversity → Beliefs → Consequences → Dispute → Energize; challenges irrational beliefs",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the Job Demands-Resources model?",
+      "type": "flashcard",
+      "answer": "Balance between job demands (stressors) and resources (support, autonomy). Imbalance leads to burnout or disengagement.",
+      "explanation": "Adequate resources buffer against demands; insufficient resources lead to stress",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is psychological safety?",
+      "type": "flashcard",
+      "answer": "Team climate where people feel safe to take risks, speak up, and make mistakes without fear of punishment",
+      "explanation": "Psychological safety enables learning, innovation, and honest communication",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is grit according to Angela Duckworth?",
+      "type": "multiple_choice",
+      "choices": ["Gravel in shoes", "Perseverance and passion for long-term goals", "Being tough", "Intelligence"],
+      "answer": "Perseverance and passion for long-term goals",
+      "explanation": "Grit predicts success beyond talent; it's about sustained effort over time",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is imposter syndrome?",
+      "type": "flashcard",
+      "answer": "Persistent belief that your success is due to luck rather than ability, accompanied by fear of being exposed as a fraud",
+      "explanation": "Common among high achievers who discount their accomplishments",
+      "lesson": "Week 8: Professional Success Psychology",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are heuristics?",
+      "type": "multiple_choice",
+      "choices": ["Memory tricks", "Mental shortcuts that simplify decisions but can lead to biases", "Logic puzzles", "Computer algorithms"],
+      "answer": "Mental shortcuts that simplify decisions but can lead to biases",
+      "explanation": "Heuristics are fast and efficient but sometimes lead to systematic errors",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is anchoring bias?",
+      "type": "flashcard",
+      "answer": "Over-relying on the first piece of information (the anchor) when making decisions",
+      "explanation": "Initial numbers influence estimates even when they're irrelevant",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does framing effect demonstrate?",
+      "type": "multiple_choice",
+      "choices": ["Picture frames affect art", "How information is presented affects decisions, even when content is identical", "Memory improves with practice", "People prefer frames"],
+      "answer": "How information is presented affects decisions, even when content is identical",
+      "explanation": "'90% survival rate' sounds better than '10% mortality rate' despite being the same",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is prospect theory about?",
+      "type": "flashcard",
+      "answer": "People are risk-averse for gains but risk-seeking for losses; losses hurt more than equivalent gains feel good",
+      "explanation": "Losing $100 feels worse than gaining $100 feels good (loss aversion)",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What did Elizabeth Loftus discover about memory?",
+      "type": "multiple_choice",
+      "choices": ["Memory is perfect", "Memories are easily distorted by suggestion and can be false", "Memory improves with age", "Photos prevent false memories"],
+      "answer": "Memories are easily distorted by suggestion and can be false",
+      "explanation": "Leading questions and misinformation can create false memories that feel real",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is inattentional blindness?",
+      "type": "flashcard",
+      "answer": "Failing to notice obvious stimuli when attention is focused elsewhere (e.g., gorilla in basketball game)",
+      "explanation": "We can miss dramatic events when our attention is engaged on something else",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What did the marshmallow test measure?",
+      "type": "multiple_choice",
+      "choices": ["Taste preferences", "Delayed gratification and self-control", "Sugar tolerance", "Memory"],
+      "answer": "Delayed gratification and self-control",
+      "explanation": "Children who waited for two marshmallows showed better life outcomes, though results are debated",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the Dunning-Kruger effect?",
+      "type": "flashcard",
+      "answer": "Incompetent people overestimate their ability while experts underestimate theirs; lack of skill prevents recognizing lack of skill",
+      "explanation": "'The more you know, the more you realize you don't know'",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do emotions affect decision-making?",
+      "type": "multiple_choice",
+      "choices": ["They don't", "Emotions guide decisions, can override logic, and affect risk perception", "Only negative emotions matter", "Emotions always lead to bad decisions"],
+      "answer": "Emotions guide decisions, can override logic, and affect risk perception",
+      "explanation": "Emotions are integral to decision-making, not just noise to be eliminated",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the halo and horn effects?",
+      "type": "flashcard",
+      "answer": "Halo: one positive trait makes us view everything positively. Horn: one negative trait makes us view everything negatively",
+      "explanation": "First impressions or single traits color our overall judgment of people",
+      "lesson": "Week 9: The Irrational Mind",
+      "difficulty": "medium"
+    }
+  ]
+}

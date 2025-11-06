@@ -1,0 +1,246 @@
+{
+  "name": "CS101 - Professional Programming Practices",
+  "description": "Best practices for writing clean, maintainable code and problem-solving strategies",
+  "lessons": [
+    {"title": "Week 4: Professional Coding Practices", "description": "Code quality, documentation, debugging, and testing"},
+    {"title": "Week 5: From Ideas to Instructions", "description": "Planning, pseudocode, implementation workflow, and testing"},
+    {"title": "Week 6: Breaking Problems Down", "description": "Problem decomposition and structured problem-solving"}
+  ],
+  "questions": [
+    {
+      "question": "What makes a good variable name?",
+      "type": "flashcard",
+      "answer": "Descriptive, tells what it represents, uses meaningful words not abbreviations (e.g., 'total_price' not 'tp')",
+      "explanation": "Good names make code self-documenting and easier to understand",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a docstring explain?",
+      "type": "multiple_choice",
+      "choices": ["What the code does (the how)", "Why the function exists and what it accomplishes (the why)", "The author's name", "The date written"],
+      "answer": "Why the function exists and what it accomplishes (the why)",
+      "explanation": "Docstrings should explain purpose and intent, not just repeat the code",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When should you write comments?",
+      "type": "flashcard",
+      "answer": "When explaining WHY something is done a certain way, not WHAT the code does (the code shows what)",
+      "explanation": "Comments add context and rationale that isn't obvious from the code itself",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the benefit of 'keeping it clean' in code?",
+      "type": "multiple_choice",
+      "choices": ["Looks prettier", "Makes debugging and maintenance easier", "Impresses your boss", "Uses less memory"],
+      "answer": "Makes debugging and maintenance easier",
+      "explanation": "Clean code is easier to read, understand, modify, and debug",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What makes code 'instantly readable'?",
+      "type": "flashcard",
+      "answer": "Consistent formatting, clear naming, logical organization, appropriate whitespace and indentation",
+      "explanation": "Readable code follows conventions and uses visual structure to guide understanding",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why break long scripts into functions?",
+      "type": "multiple_choice",
+      "choices": ["To make the file longer", "To enable reuse, testing, and understanding of individual pieces", "To slow down execution", "To confuse other programmers"],
+      "answer": "To enable reuse, testing, and understanding of individual pieces",
+      "explanation": "Functions promote modularity, reusability, and easier testing",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is print tracing?",
+      "type": "flashcard",
+      "answer": "Adding strategic print statements to show variable values and program flow during execution",
+      "explanation": "Print tracing helps visualize what's happening inside your program",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is an invariant?",
+      "type": "flashcard",
+      "answer": "A condition that should always be true at a certain point in the code; used as safety checkpoints",
+      "explanation": "Invariants help catch bugs by asserting expected conditions",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What makes a function reusable?",
+      "type": "multiple_choice",
+      "choices": ["Long name", "No side effects, clear inputs/outputs, single responsibility", "Global variables", "Lots of print statements"],
+      "answer": "No side effects, clear inputs/outputs, single responsibility",
+      "explanation": "Reusable functions are self-contained and don't depend on external state",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'stress it to the edge' mean in testing?",
+      "type": "flashcard",
+      "answer": "Test with extreme values: empty inputs, very large numbers, boundary cases, edge conditions",
+      "explanation": "Edge case testing reveals bugs that might not appear with normal inputs",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why validate inputs before processing?",
+      "type": "multiple_choice",
+      "choices": ["To annoy users", "To prevent crashes and ensure data quality", "To slow down the program", "It's not necessary"],
+      "answer": "To prevent crashes and ensure data quality",
+      "explanation": "Input validation catches bad data before it causes problems",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is refactoring?",
+      "type": "flashcard",
+      "answer": "Improving code structure without changing its external behavior",
+      "explanation": "Refactoring makes code cleaner and more maintainable while keeping functionality the same",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you ensure 'nothing breaks' during refactoring?",
+      "type": "flashcard",
+      "answer": "Run tests before and after changes to verify behavior stays the same",
+      "explanation": "Tests act as a safety net when modifying code",
+      "lesson": "Week 4: Professional Coding Practices",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the key to balancing planning and coding?",
+      "type": "multiple_choice",
+      "choices": ["Always code first", "Always plan everything before coding", "Plan enough to start, then iterate", "Never plan, just code"],
+      "answer": "Plan enough to start, then iterate",
+      "explanation": "Over-planning wastes time; under-planning leads to confusion. Find the balance.",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of hierarchy in pseudocode?",
+      "type": "flashcard",
+      "answer": "To show the structure and relationships between steps; major steps at top, details nested below",
+      "explanation": "Hierarchical pseudocode reveals the logical organization of the solution",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common solution patterns?",
+      "type": "flashcard",
+      "answer": "Counter, accumulator, search, filter, map, reduce, sentinel loop, validation loop",
+      "explanation": "Recognizing patterns helps you solve similar problems faster",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is a function stub?",
+      "type": "multiple_choice",
+      "choices": ["A broken function", "A placeholder function with signature but minimal implementation", "The end of a function", "A function comment"],
+      "answer": "A placeholder function with signature but minimal implementation",
+      "explanation": "Stubs let you build the overall structure before implementing details",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'building code incrementally' mean?",
+      "type": "flashcard",
+      "answer": "Write small pieces, test each piece, then add more; don't write everything at once",
+      "explanation": "Incremental development catches errors early and builds confidence",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a test table?",
+      "type": "flashcard",
+      "answer": "A table with columns for inputs, expected outputs, and actual outputs to systematically test code",
+      "explanation": "Test tables organize test cases and make it easy to verify correctness",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is dry running?",
+      "type": "multiple_choice",
+      "choices": ["Running code without water", "Manually tracing through code/pseudocode with test values", "Running code in production", "Deleting print statements"],
+      "answer": "Manually tracing through code/pseudocode with test values",
+      "explanation": "Dry running helps you understand and verify logic before or without running code",
+      "lesson": "Week 5: From Ideas to Instructions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a feature brief?",
+      "type": "flashcard",
+      "answer": "A clear statement of what feature you're building and why, written for understanding not implementation",
+      "explanation": "Feature briefs clarify the goal before diving into technical details",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's the difference between purpose and technical details?",
+      "type": "multiple_choice",
+      "choices": ["No difference", "Purpose is what and why; technical details are how", "Purpose is longer", "Technical details come first"],
+      "answer": "Purpose is what and why; technical details are how",
+      "explanation": "Understanding purpose before implementation prevents solving the wrong problem",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should a structured problem statement include?",
+      "type": "flashcard",
+      "answer": "Clear goal, constraints, assumptions, inputs, outputs, and success criteria",
+      "explanation": "Complete problem statements prevent misunderstandings and scope creep",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why define example inputs and outputs?",
+      "type": "multiple_choice",
+      "choices": ["To waste time", "To clarify expectations and create test cases", "To confuse teammates", "It's not useful"],
+      "answer": "To clarify expectations and create test cases",
+      "explanation": "Examples make abstract requirements concrete and testable",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you break down into subproblems?",
+      "type": "flashcard",
+      "answer": "Identify independent pieces that can be solved separately, each with clear inputs/outputs",
+      "explanation": "Breaking problems into subproblems makes complex tasks manageable",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why sequence subproblems logically?",
+      "type": "flashcard",
+      "answer": "Some subproblems depend on others; solving in correct order prevents rework",
+      "explanation": "Dependency order matters: validate before processing, process before displaying",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'prioritizing tasks by risk' mean?",
+      "type": "multiple_choice",
+      "choices": ["Do scary tasks last", "Do uncertain/difficult tasks first to learn early", "Do easy tasks first always", "Ignore risk"],
+      "answer": "Do uncertain/difficult tasks first to learn early",
+      "explanation": "Tackling risky tasks early prevents late surprises and wasted work",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is a function pipeline?",
+      "type": "flashcard",
+      "answer": "Connecting functions where the output of one becomes the input of the next",
+      "explanation": "Pipelines break complex processing into clear, testable stages",
+      "lesson": "Week 6: Breaking Problems Down",
+      "difficulty": "medium"
+    }
+  ]
+}

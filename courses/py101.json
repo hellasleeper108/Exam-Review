@@ -1,0 +1,247 @@
+{
+  "name": "PY101 - Python Programming Fundamentals",
+  "description": "Complete Python programming course covering foundations, control flow, and data structures",
+  "lessons": [
+    {"title": "Week 1: Core Foundations", "description": "Printing, variables, types, operators, and basic functions"},
+    {"title": "Week 2: Decisions and Loops", "description": "Control flow, conditionals, loops, and list basics"},
+    {"title": "Week 3: Data Structures", "description": "Strings, lists, dictionaries, and nested structures"}
+  ],
+  "questions": [
+    {
+      "question": "What symbol is used to start a comment in Python?",
+      "type": "multiple_choice",
+      "choices": ["//", "#", "/*", "<!--"],
+      "answer": "#",
+      "explanation": "In Python, comments start with the # symbol",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between / and // operators?",
+      "type": "flashcard",
+      "answer": "/ performs float division (returns decimal), // performs floor division (returns integer quotient)",
+      "explanation": "/ gives you 7/2 = 3.5, while // gives you 7//2 = 3",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does the modulo operator (%) return?",
+      "type": "multiple_choice",
+      "choices": ["The quotient", "The remainder", "The percentage", "The reciprocal"],
+      "answer": "The remainder",
+      "explanation": "% returns the remainder after division. 7 % 3 = 1",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you check if a number is even using modulo?",
+      "type": "flashcard",
+      "answer": "number % 2 == 0",
+      "explanation": "Even numbers have no remainder when divided by 2",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does int('3.7') return?",
+      "type": "multiple_choice",
+      "choices": ["3", "4", "3.7", "ValueError"],
+      "answer": "ValueError",
+      "explanation": "int() cannot parse strings with decimal points. Use float() first, then int()",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of try/except blocks?",
+      "type": "flashcard",
+      "answer": "To handle errors gracefully and prevent program crashes",
+      "explanation": "try/except catches exceptions so your program can respond appropriately instead of crashing",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the key difference between return and print in functions?",
+      "type": "flashcard",
+      "answer": "return sends a value back to the caller; print displays to console but returns None",
+      "explanation": "return makes values available for further computation; print is just for display",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'hello'[1:4] return?",
+      "type": "multiple_choice",
+      "choices": ["'ell'", "'ello'", "'hel'", "'hell'"],
+      "answer": "'ell'",
+      "explanation": "Slicing [1:4] starts at index 1 and goes up to (but not including) index 4",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does negative indexing do? Give an example.",
+      "type": "flashcard",
+      "answer": "Counts from the end of the string/list. 'hello'[-1] = 'o', 'hello'[-2] = 'l'",
+      "explanation": "-1 is the last character, -2 is second to last, etc.",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is variable scope?",
+      "type": "flashcard",
+      "answer": "The region of code where a variable can be accessed. Variables defined in functions are local to that function.",
+      "explanation": "Local variables exist only within their function; they cannot be accessed outside",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does f'{price:.2f}' do?",
+      "type": "multiple_choice",
+      "choices": ["Formats price with 2 decimal places", "Multiplies price by 0.2", "Rounds price to nearest 2", "Converts price to string"],
+      "answer": "Formats price with 2 decimal places",
+      "explanation": ".2f in f-strings formats floats to 2 decimal places, perfect for money",
+      "lesson": "Week 1: Core Foundations",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is short-circuiting in logical operators?",
+      "type": "flashcard",
+      "answer": "'and' stops evaluating if first condition is False; 'or' stops if first condition is True",
+      "explanation": "Python doesn't evaluate unnecessary conditions for efficiency",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the difference between == and 'is' in Python?",
+      "type": "multiple_choice",
+      "choices": ["No difference", "== checks value equality; 'is' checks object identity", "is checks value; == checks identity", "is is for numbers only"],
+      "answer": "== checks value equality; 'is' checks object identity",
+      "explanation": "== compares values; 'is' checks if two variables point to the same object in memory",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you check if a substring exists in a string?",
+      "type": "flashcard",
+      "answer": "Use the 'in' operator: 'sub' in 'substring' returns True",
+      "explanation": "'in' checks membership for strings, lists, and other collections",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does range(5) produce?",
+      "type": "multiple_choice",
+      "choices": ["0, 1, 2, 3, 4", "1, 2, 3, 4, 5", "0, 1, 2, 3, 4, 5", "1, 2, 3, 4"],
+      "answer": "0, 1, 2, 3, 4",
+      "explanation": "range(n) generates numbers from 0 up to (but not including) n",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does range(2, 10, 3) produce?",
+      "type": "multiple_choice",
+      "choices": ["2, 5, 8", "2, 3, 6, 9", "3, 6, 9", "2, 4, 6, 8"],
+      "answer": "2, 5, 8",
+      "explanation": "range(start, stop, step): starts at 2, steps by 3, stops before 10",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a sentinel value in while loops?",
+      "type": "flashcard",
+      "answer": "A special value that signals the loop to terminate (e.g., empty string, -1, 'quit')",
+      "explanation": "Sentinels are used to break out of loops when a specific condition is met",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the difference between break and continue?",
+      "type": "flashcard",
+      "answer": "break exits the entire loop; continue skips to the next iteration",
+      "explanation": "break terminates the loop completely; continue jumps to the next cycle",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does enumerate() do in a for loop?",
+      "type": "multiple_choice",
+      "choices": ["Counts loop iterations", "Returns (index, value) pairs", "Creates a range", "Sorts the list"],
+      "answer": "Returns (index, value) pairs",
+      "explanation": "enumerate(list) yields tuples of (index, value) for each element",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the difference between sorted() and .sort()?",
+      "type": "flashcard",
+      "answer": "sorted() returns a new sorted list; .sort() sorts in-place and returns None",
+      "explanation": "sorted() is a function that creates a new list; .sort() is a method that modifies the original",
+      "lesson": "Week 2: Decisions and Loops",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What does 'hello world'.split() return?",
+      "type": "multiple_choice",
+      "choices": ["['hello', 'world']", "['h','e','l','l','o',' ','w','o','r','l','d']", "'helloworld'", "['hello world']"],
+      "answer": "['hello', 'world']",
+      "explanation": ".split() without arguments splits on whitespace",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does ' | '.join(['a', 'b', 'c']) return?",
+      "type": "multiple_choice",
+      "choices": ["'a | b | c'", "['a', '|', 'b', '|', 'c']", "'abc'", "'a|b|c'"],
+      "answer": "'a | b | c'",
+      "explanation": ".join() concatenates list elements with the separator string",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you create an empty dictionary?",
+      "type": "multiple_choice",
+      "choices": ["{}", "[]", "dict()", "Both {} and dict()"],
+      "answer": "Both {} and dict()",
+      "explanation": "Both {} and dict() create empty dictionaries",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you safely get a value from a dictionary without KeyError?",
+      "type": "flashcard",
+      "answer": "Use .get() method: dict.get('key', default_value)",
+      "explanation": ".get() returns the default value if key doesn't exist instead of raising an error",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does dict.items() return?",
+      "type": "flashcard",
+      "answer": "A view of (key, value) tuples that can be iterated over",
+      "explanation": ".items() is used for iterating over both keys and values in a dictionary",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the danger of mutating nested structures?",
+      "type": "flashcard",
+      "answer": "Changes can affect multiple references to the same object, causing unexpected side effects",
+      "explanation": "Lists and dicts are mutable, so assignments copy references not values",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is 'truthiness' in Python?",
+      "type": "flashcard",
+      "answer": "How values are evaluated as True/False in conditions. Empty collections, 0, None are falsy; others are truthy.",
+      "explanation": "Python converts values to boolean in conditions: [], '', 0, None are False; everything else is True",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What's a common pattern for counting occurrences with dictionaries?",
+      "type": "flashcard",
+      "answer": "counts = {}; for item in data: counts[item] = counts.get(item, 0) + 1",
+      "explanation": "Use .get() with default 0 to initialize counts for new items",
+      "lesson": "Week 3: Data Structures",
+      "difficulty": "hard"
+    }
+  ]
+}
