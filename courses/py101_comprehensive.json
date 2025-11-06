@@ -1,0 +1,1329 @@
+{
+  "name": "PY101 - Python Programming (Comprehensive)",
+  "description": "Complete Python course with detailed questions for each lesson",
+  "lessons": [
+    {"title": "W1L01: Printing and comments", "description": "Using print() and writing comments"},
+    {"title": "W1L02: Variables, types, and strings", "description": "Variables, data types, and strings"},
+    {"title": "W1L03: Expressions and operator precedence", "description": "Mathematical expressions and PEMDAS"},
+    {"title": "W1L04: Updating values and printing expressions", "description": "Variable reassignment"},
+    {"title": "W1L05: Modeling real-world calculations", "description": "Practical applications"},
+    {"title": "W1L06: Division modes", "description": "/ vs // operators"},
+    {"title": "W1L07: Modulo in practice", "description": "Using % operator"},
+    {"title": "W1L08: Numeric casting and formatting", "description": "Type conversion"},
+    {"title": "W1L09: Input and error handling", "description": "input() and try/except"},
+    {"title": "W1L10: Debugging with prints", "description": "Print debugging"},
+    {"title": "W1L11: Functions - define and call", "description": "Function basics"},
+    {"title": "W1L12: Function calling mechanics", "description": "Arguments and parameters"},
+    {"title": "W1L13: Return vs print", "description": "Function return values"},
+    {"title": "W1L14: String indexing and slicing", "description": "Accessing characters"},
+    {"title": "W1L15: Negative indexing", "description": "Reverse indexing"},
+    {"title": "W1L16: Scope and local variables", "description": "Variable scope"},
+    {"title": "W1L17: Function call trees", "description": "Execution flow"},
+    {"title": "W1L18: f-strings numeric precision", "description": "Number formatting"},
+    {"title": "W1L19: f-strings alignment", "description": "Text alignment"},
+    {"title": "W1L20: Asserts and debugging", "description": "Using assertions"},
+    {"title": "W1L21: Minimal failing cases", "description": "Debug strategies"},
+    {"title": "W2L01: Control flow overview", "description": "Decisions and loops"},
+    {"title": "W2L02: If/else syntax", "description": "Conditional statements"},
+    {"title": "W2L03: Logical operators", "description": "and/or/not"},
+    {"title": "W2L04: Booleans and comparisons", "description": "== vs is"},
+    {"title": "W2L05: String membership", "description": "'in' operator"},
+    {"title": "W2L06: Elif and nested decisions", "description": "Multi-way branching"},
+    {"title": "W2L07: Decision tables", "description": "Complex conditionals"},
+    {"title": "W2L08: For loops and range", "description": "Basic iteration"},
+    {"title": "W2L09: Range patterns", "description": "start, stop, step"},
+    {"title": "W2L10: While loops", "description": "Condition-based loops"},
+    {"title": "W2L11: Break and continue", "description": "Loop control"},
+    {"title": "W2L12: Input validation", "description": "Validation loops"},
+    {"title": "W2L13: Counters and totals", "description": "Accumulator pattern"},
+    {"title": "W2L14: Running aggregates", "description": "min, max, average"},
+    {"title": "W2L15: Creating lists", "description": "List initialization"},
+    {"title": "W2L16: List indexing", "description": "Accessing elements"},
+    {"title": "W2L17: Iterating lists", "description": "for and enumerate"},
+    {"title": "W2L18: List methods", "description": "append, remove, etc."},
+    {"title": "W2L19: Sorting lists", "description": "sorted() vs .sort()"},
+    {"title": "W3L01: String slicing and methods", "description": "Advanced strings"},
+    {"title": "W3L02: Split and join", "description": "Text processing"},
+    {"title": "W3L03: Dictionary basics", "description": "keys and values"},
+    {"title": "W3L04: Dictionary iteration", "description": "Looping dicts"},
+    {"title": "W3L05: Dictionary updates", "description": "Modifying dicts"},
+    {"title": "W3L06: Nested structures", "description": "Complex data"},
+    {"title": "W3L07: Parsing to list of dicts", "description": "Text to data"},
+    {"title": "W3L08: Validation", "description": "Data validation"},
+    {"title": "W3L09: Truthiness", "description": "Boolean evaluation"},
+    {"title": "W3L10: Counting with dicts", "description": "Frequency counting"},
+    {"title": "W3L11: State and side effects", "description": "Function behavior"},
+    {"title": "W3L12: Problem decomposition", "description": "Breaking problems"}
+  ],
+  "questions": [
+    {
+      "question": "What function is used to display output in Python?",
+      "type": "multiple_choice",
+      "choices": ["print()", "display()", "show()", "output()"],
+      "answer": "print()",
+      "explanation": "print() is the built-in function to display output to the console",
+      "lesson": "W1L01: Printing and comments",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which symbol starts a comment in Python?",
+      "type": "multiple_choice",
+      "choices": ["#", "//", "/*", "<!--"],
+      "answer": "#",
+      "explanation": "# is used for single-line comments in Python",
+      "lesson": "W1L01: Printing and comments",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does print('Hello', 'World') output?",
+      "type": "multiple_choice",
+      "choices": ["Hello World", "HelloWorld", "Hello,World", "Error"],
+      "answer": "Hello World",
+      "explanation": "print() separates multiple arguments with a space by default",
+      "lesson": "W1L01: Printing and comments",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you assign a value to a variable in Python?",
+      "type": "multiple_choice",
+      "choices": ["x = 5", "x := 5", "var x = 5", "let x = 5"],
+      "answer": "x = 5",
+      "explanation": "Python uses = for assignment",
+      "lesson": "W1L02: Variables, types, and strings",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What type is the value 'Hello'?",
+      "type": "multiple_choice",
+      "choices": ["str", "string", "text", "char"],
+      "answer": "str",
+      "explanation": "Strings in Python have the type 'str'",
+      "lesson": "W1L02: Variables, types, and strings",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which function returns the type of a variable?",
+      "type": "multiple_choice",
+      "choices": ["type()", "typeof()", "gettype()", "vartype()"],
+      "answer": "type()",
+      "explanation": "type() returns the type of any Python object",
+      "lesson": "W1L02: Variables, types, and strings",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the result of 2 + 3 * 4?",
+      "type": "multiple_choice",
+      "choices": ["14", "20", "24", "Error"],
+      "answer": "14",
+      "explanation": "Multiplication has higher precedence than addition (PEMDAS): 3*4=12, then 2+12=14",
+      "lesson": "W1L03: Expressions and operator precedence",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the result of (2 + 3) * 4?",
+      "type": "multiple_choice",
+      "choices": ["20", "14", "24", "12"],
+      "answer": "20",
+      "explanation": "Parentheses are evaluated first: (2+3)=5, then 5*4=20",
+      "lesson": "W1L03: Expressions and operator precedence",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does ** operator do?",
+      "type": "multiple_choice",
+      "choices": ["Exponentiation", "Multiplication", "Division", "Modulo"],
+      "answer": "Exponentiation",
+      "explanation": "** is the power operator: 2**3 = 8",
+      "lesson": "W1L03: Expressions and operator precedence",
+      "difficulty": "easy"
+    },
+    {
+      "question": "After x = 5, then x = x + 1, what is x?",
+      "type": "multiple_choice",
+      "choices": ["6", "5", "11", "Error"],
+      "answer": "6",
+      "explanation": "x + 1 evaluates to 6, then reassigns to x",
+      "lesson": "W1L04: Updating values and printing expressions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the shorthand for x = x + 3?",
+      "type": "multiple_choice",
+      "choices": ["x += 3", "x++", "x =+ 3", "x + 3"],
+      "answer": "x += 3",
+      "explanation": "+= is the augmented assignment operator",
+      "lesson": "W1L04: Updating values and printing expressions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does print(5 + 3) display?",
+      "type": "multiple_choice",
+      "choices": ["8", "5 + 3", "53", "Error"],
+      "answer": "8",
+      "explanation": "print() evaluates the expression first, then displays the result",
+      "lesson": "W1L04: Updating values and printing expressions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "To calculate tax as 8% of price, which expression is correct?",
+      "type": "multiple_choice",
+      "choices": ["price * 0.08", "price * 8", "price / 8", "price * 8%"],
+      "answer": "price * 0.08",
+      "explanation": "8% as a decimal is 0.08, multiply by price",
+      "lesson": "W1L05: Modeling real-world calculations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "To convert Fahrenheit to Celsius: C = (F - 32) * 5 / 9. What's the correct order?",
+      "type": "multiple_choice",
+      "choices": ["Subtract 32, multiply by 5, divide by 9", "Multiply by 5, subtract 32, divide by 9", "Divide by 9, subtract 32, multiply by 5", "Subtract 32, divide by 9, multiply by 5"],
+      "answer": "Subtract 32, multiply by 5, divide by 9",
+      "explanation": "Follow the formula exactly: (F-32) first, then *5, then /9",
+      "lesson": "W1L05: Modeling real-world calculations",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 7 / 2 return?",
+      "type": "multiple_choice",
+      "choices": ["3.5", "3", "4", "3.0"],
+      "answer": "3.5",
+      "explanation": "/ performs true division, returning a float",
+      "lesson": "W1L06: Division modes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 7 // 2 return?",
+      "type": "multiple_choice",
+      "choices": ["3", "3.5", "4", "3.0"],
+      "answer": "3",
+      "explanation": "// performs floor division, returning the quotient as an integer",
+      "lesson": "W1L06: Division modes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 7 % 2 return?",
+      "type": "multiple_choice",
+      "choices": ["1", "3", "3.5", "0"],
+      "answer": "1",
+      "explanation": "% returns the remainder: 7 divided by 2 is 3 remainder 1",
+      "lesson": "W1L06: Division modes",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you check if a number is even?",
+      "type": "multiple_choice",
+      "choices": ["n % 2 == 0", "n / 2 == 0", "n // 2 == 0", "n % 2 == 1"],
+      "answer": "n % 2 == 0",
+      "explanation": "Even numbers have remainder 0 when divided by 2",
+      "lesson": "W1L07: Modulo in practice",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 13 % 5 return?",
+      "type": "multiple_choice",
+      "choices": ["3", "2", "2.6", "8"],
+      "answer": "3",
+      "explanation": "13 divided by 5 is 2 remainder 3",
+      "lesson": "W1L07: Modulo in practice",
+      "difficulty": "easy"
+    },
+    {
+      "question": "To get the last digit of number n, use:",
+      "type": "multiple_choice",
+      "choices": ["n % 10", "n // 10", "n / 10", "n[-1]"],
+      "answer": "n % 10",
+      "explanation": "Modulo 10 gives the last digit (ones place)",
+      "lesson": "W1L07: Modulo in practice",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does int('42') return?",
+      "type": "multiple_choice",
+      "choices": ["42", "Error", "'42'", "42.0"],
+      "answer": "42",
+      "explanation": "int() converts a string to an integer",
+      "lesson": "W1L08: Numeric casting and formatting",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does float('3.14') return?",
+      "type": "multiple_choice",
+      "choices": ["3.14", "3", "Error", "'3.14'"],
+      "answer": "3.14",
+      "explanation": "float() converts a string to a floating-point number",
+      "lesson": "W1L08: Numeric casting and formatting",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does round(3.7) return?",
+      "type": "multiple_choice",
+      "choices": ["4", "3", "3.7", "4.0"],
+      "answer": "4",
+      "explanation": "round() rounds to the nearest integer; 3.7 rounds up to 4",
+      "lesson": "W1L08: Numeric casting and formatting",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What function gets user input as a string?",
+      "type": "multiple_choice",
+      "choices": ["input()", "get()", "read()", "scan()"],
+      "answer": "input()",
+      "explanation": "input() reads user input and returns it as a string",
+      "lesson": "W1L09: Input and error handling",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does int(input()) do?",
+      "type": "multiple_choice",
+      "choices": ["Gets user input and converts to int", "Gets integer input only", "Returns an error", "Gets decimal input"],
+      "answer": "Gets user input and converts to int",
+      "explanation": "input() returns string, int() converts it to integer",
+      "lesson": "W1L09: Input and error handling",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What happens when int('hello') is executed?",
+      "type": "multiple_choice",
+      "choices": ["ValueError", "TypeError", "Returns 0", "Returns None"],
+      "answer": "ValueError",
+      "explanation": "int() raises ValueError when the string cannot be converted to an integer",
+      "lesson": "W1L09: Input and error handling",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of try/except?",
+      "type": "multiple_choice",
+      "choices": ["Handle errors gracefully", "Try multiple options", "Test code", "Repeat code"],
+      "answer": "Handle errors gracefully",
+      "explanation": "try/except catches exceptions and prevents crashes",
+      "lesson": "W1L09: Input and error handling",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the main purpose of print debugging?",
+      "type": "multiple_choice",
+      "choices": ["View variable values during execution", "Print error messages", "Format output", "Create logs"],
+      "answer": "View variable values during execution",
+      "explanation": "Print statements show what's happening inside your program",
+      "lesson": "W1L10: Debugging with prints",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Where should you place debug print statements?",
+      "type": "multiple_choice",
+      "choices": ["Before and after suspected problem areas", "Only at the start", "Only at the end", "Everywhere"],
+      "answer": "Before and after suspected problem areas",
+      "explanation": "Strategic placement helps isolate bugs",
+      "lesson": "W1L10: Debugging with prints",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What keyword defines a function?",
+      "type": "multiple_choice",
+      "choices": ["def", "function", "func", "define"],
+      "answer": "def",
+      "explanation": "def is used to define functions in Python",
+      "lesson": "W1L11: Functions - define and call",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the parentheses after a function name used for?",
+      "type": "multiple_choice",
+      "choices": ["Parameters/arguments", "Decoration", "Returning values", "Comments"],
+      "answer": "Parameters/arguments",
+      "explanation": "Parentheses hold parameters (definition) and arguments (call)",
+      "lesson": "W1L11: Functions - define and call",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you call a function named greet?",
+      "type": "multiple_choice",
+      "choices": ["greet()", "call greet()", "greet", "run greet()"],
+      "answer": "greet()",
+      "explanation": "Function name followed by parentheses calls the function",
+      "lesson": "W1L11: Functions - define and call",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What happens if you call func(5, 10) but func expects 1 parameter?",
+      "type": "multiple_choice",
+      "choices": ["TypeError", "Uses first argument only", "Uses last argument only", "Adds them together"],
+      "answer": "TypeError",
+      "explanation": "Python raises TypeError when argument count doesn't match parameter count",
+      "lesson": "W1L12: Function calling mechanics",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a parameter?",
+      "type": "multiple_choice",
+      "choices": ["Variable in function definition", "Value passed to function", "Return value", "Function name"],
+      "answer": "Variable in function definition",
+      "explanation": "Parameters are placeholders in the function definition; arguments are actual values",
+      "lesson": "W1L12: Function calling mechanics",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is an argument?",
+      "type": "multiple_choice",
+      "choices": ["Value passed when calling function", "Variable in definition", "Return value", "Error message"],
+      "answer": "Value passed when calling function",
+      "explanation": "Arguments are the actual values you pass when calling a function",
+      "lesson": "W1L12: Function calling mechanics",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does a function without a return statement return?",
+      "type": "multiple_choice",
+      "choices": ["None", "0", "Empty string", "Error"],
+      "answer": "None",
+      "explanation": "Functions without return implicitly return None",
+      "lesson": "W1L13: Return vs print",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the difference between return and print in a function?",
+      "type": "multiple_choice",
+      "choices": ["return sends value to caller; print displays to console", "No difference", "return displays; print sends value", "return is faster"],
+      "answer": "return sends value to caller; print displays to console",
+      "explanation": "return makes values available for use; print just shows them",
+      "lesson": "W1L13: Return vs print",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Can a function have multiple return statements?",
+      "type": "multiple_choice",
+      "choices": ["Yes, but only one executes", "No, only one allowed", "Yes, all execute", "Only in loops"],
+      "answer": "Yes, but only one executes",
+      "explanation": "Early return exits the function immediately when that path is taken",
+      "lesson": "W1L13: Return vs print",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'hello'[0] return?",
+      "type": "multiple_choice",
+      "choices": ["'h'", "'e'", "0", "Error"],
+      "answer": "'h'",
+      "explanation": "Index 0 is the first character",
+      "lesson": "W1L14: String indexing and slicing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'python'[1:4] return?",
+      "type": "multiple_choice",
+      "choices": ["'yth'", "'pyt'", "'ytho'", "'ython'"],
+      "answer": "'yth'",
+      "explanation": "Slice [1:4] includes indices 1, 2, 3 (excludes 4)",
+      "lesson": "W1L14: String indexing and slicing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'test'[:2] return?",
+      "type": "multiple_choice",
+      "choices": ["'te'", "'test'", "'es'", "'st'"],
+      "answer": "'te'",
+      "explanation": "[:2] means from start up to (not including) index 2",
+      "lesson": "W1L14: String indexing and slicing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'world'[-1] return?",
+      "type": "multiple_choice",
+      "choices": ["'d'", "'w'", "Error", "'l'"],
+      "answer": "'d'",
+      "explanation": "-1 is the last character",
+      "lesson": "W1L15: Negative indexing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'python'[-3] return?",
+      "type": "multiple_choice",
+      "choices": ["'h'", "'t'", "'o'", "'n'"],
+      "answer": "'h'",
+      "explanation": "-3 is third from the end: p y t h o n",
+      "lesson": "W1L15: Negative indexing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'data'[-2:] return?",
+      "type": "multiple_choice",
+      "choices": ["'ta'", "'da'", "'at'", "'data'"],
+      "answer": "'ta'",
+      "explanation": "[-2:] means from second-to-last to end",
+      "lesson": "W1L15: Negative indexing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is variable scope?",
+      "type": "multiple_choice",
+      "choices": ["Where a variable can be accessed", "Variable type", "Variable size", "Variable name"],
+      "answer": "Where a variable can be accessed",
+      "explanation": "Scope defines the region where a variable exists",
+      "lesson": "W1L16: Scope and local variables",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Can you access a local variable from outside its function?",
+      "type": "multiple_choice",
+      "choices": ["No", "Yes", "Only if returned", "Only with global keyword"],
+      "answer": "No",
+      "explanation": "Local variables only exist within their function",
+      "lesson": "W1L16: Scope and local variables",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What happens to local variables when a function finishes?",
+      "type": "multiple_choice",
+      "choices": ["They are destroyed", "They become global", "They are saved", "They return None"],
+      "answer": "They are destroyed",
+      "explanation": "Local variables are destroyed when the function exits",
+      "lesson": "W1L16: Scope and local variables",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a call tree?",
+      "type": "multiple_choice",
+      "choices": ["Diagram showing function calls", "Tree data structure", "Recursion pattern", "Loop structure"],
+      "answer": "Diagram showing function calls",
+      "explanation": "Call trees visualize the order and hierarchy of function calls",
+      "lesson": "W1L17: Function call trees",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When function A calls function B, which executes first?",
+      "type": "multiple_choice",
+      "choices": ["A starts, then B completes, then A finishes", "B then A", "A completes then B", "Simultaneously"],
+      "answer": "A starts, then B completes, then A finishes",
+      "explanation": "Calling function pauses until called function completes",
+      "lesson": "W1L17: Function call trees",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does f'{3.14159:.2f}' produce?",
+      "type": "multiple_choice",
+      "choices": ["'3.14'", "'3.1'", "'3.141'", "'3'"],
+      "answer": "'3.14'",
+      "explanation": ".2f formats a float to 2 decimal places",
+      "lesson": "W1L18: f-strings numeric precision",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does f'{100:.1f}' produce?",
+      "type": "multiple_choice",
+      "choices": ["'100.0'", "'100'", "'100.00'", "'100.1'"],
+      "answer": "'100.0'",
+      "explanation": ".1f shows 1 decimal place even for whole numbers",
+      "lesson": "W1L18: f-strings numeric precision",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does f'{5:>3}' produce?",
+      "type": "multiple_choice",
+      "choices": ["'  5'", "'5  '", "'5'", "'005'"],
+      "answer": "'  5'",
+      "explanation": ":>3 right-aligns in a field of width 3",
+      "lesson": "W1L19: f-strings alignment",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What does f'{5:<3}' produce?",
+      "type": "multiple_choice",
+      "choices": ["'5  '", "'  5'", "'5'", "'500'"],
+      "answer": "'5  '",
+      "explanation": ":<3 left-aligns in a field of width 3",
+      "lesson": "W1L19: f-strings alignment",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What does assert True do?",
+      "type": "multiple_choice",
+      "choices": ["Nothing (passes)", "Raises AssertionError", "Returns True", "Prints True"],
+      "answer": "Nothing (passes)",
+      "explanation": "assert only raises error if condition is False",
+      "lesson": "W1L20: Asserts and debugging",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does assert False do?",
+      "type": "multiple_choice",
+      "choices": ["Raises AssertionError", "Returns False", "Nothing", "Prints error"],
+      "answer": "Raises AssertionError",
+      "explanation": "assert raises AssertionError when condition is False",
+      "lesson": "W1L20: Asserts and debugging",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a minimal failing case?",
+      "type": "multiple_choice",
+      "choices": ["Smallest input that reproduces the bug", "First error found", "Last error found", "Most common error"],
+      "answer": "Smallest input that reproduces the bug",
+      "explanation": "Simplifying the problem makes debugging easier",
+      "lesson": "W1L21: Minimal failing cases",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why use minimal test cases when debugging?",
+      "type": "multiple_choice",
+      "choices": ["Easier to isolate the problem", "Faster execution", "Less typing", "More accurate"],
+      "answer": "Easier to isolate the problem",
+      "explanation": "Smaller inputs reduce complexity and make bugs more obvious",
+      "lesson": "W1L21: Minimal failing cases",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the two main categories of control flow?",
+      "type": "multiple_choice",
+      "choices": ["Decisions and repetition", "If and else", "Loops and functions", "True and False"],
+      "answer": "Decisions and repetition",
+      "explanation": "Control flow consists of decisions (if/else) and repetition (loops)",
+      "lesson": "W2L01: Control flow overview",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which is an example of a decision structure?",
+      "type": "multiple_choice",
+      "choices": ["if/else", "for loop", "while loop", "function"],
+      "answer": "if/else",
+      "explanation": "if/else makes decisions based on conditions",
+      "lesson": "W2L01: Control flow overview",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which is an example of repetition?",
+      "type": "multiple_choice",
+      "choices": ["for loop", "if statement", "return", "print"],
+      "answer": "for loop",
+      "explanation": "Loops repeat code multiple times",
+      "lesson": "W2L01: Control flow overview",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What happens if the if condition is False and there's no else?",
+      "type": "multiple_choice",
+      "choices": ["Code inside if is skipped", "Error occurs", "Code runs anyway", "Program stops"],
+      "answer": "Code inside if is skipped",
+      "explanation": "If condition is False, the if block is skipped",
+      "lesson": "W2L02: If/else syntax",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What must come after an if statement?",
+      "type": "multiple_choice",
+      "choices": ["A colon :", "A semicolon ;", "A bracket {", "Nothing"],
+      "answer": "A colon :",
+      "explanation": "Python if statements end with a colon before the indented block",
+      "lesson": "W2L02: If/else syntax",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you indicate a code block in Python?",
+      "type": "multiple_choice",
+      "choices": ["Indentation", "Curly braces", "Parentheses", "BEGIN/END"],
+      "answer": "Indentation",
+      "explanation": "Python uses indentation to define code blocks",
+      "lesson": "W2L02: If/else syntax",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does True and False evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["False", "True", "Error", "None"],
+      "answer": "False",
+      "explanation": "'and' is True only when both operands are True",
+      "lesson": "W2L03: Logical operators",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does True or False evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["True", "False", "Error", "None"],
+      "answer": "True",
+      "explanation": "'or' is True when at least one operand is True",
+      "lesson": "W2L03: Logical operators",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is short-circuiting?",
+      "type": "multiple_choice",
+      "choices": ["Stopping evaluation when result is determined", "Circuit malfunction", "Fast execution", "Skipping code"],
+      "answer": "Stopping evaluation when result is determined",
+      "explanation": "'and' stops at first False; 'or' stops at first True",
+      "lesson": "W2L03: Logical operators",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does not True evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["False", "True", "Error", "None"],
+      "answer": "False",
+      "explanation": "'not' inverts the boolean value",
+      "lesson": "W2L03: Logical operators",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 5 == 5 evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["True", "False", "5", "Error"],
+      "answer": "True",
+      "explanation": "== checks if values are equal",
+      "lesson": "W2L04: Booleans and comparisons",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 5 != 3 evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["True", "False", "5", "3"],
+      "answer": "True",
+      "explanation": "!= checks if values are not equal",
+      "lesson": "W2L04: Booleans and comparisons",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's the difference between == and is?",
+      "type": "multiple_choice",
+      "choices": ["== checks value; is checks identity", "No difference", "is checks value; == checks type", "is is faster"],
+      "answer": "== checks value; is checks identity",
+      "explanation": "== compares values; is checks if same object in memory",
+      "lesson": "W2L04: Booleans and comparisons",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'cat' in 'catalog' evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["True", "False", "'cat'", "Error"],
+      "answer": "True",
+      "explanation": "'in' checks if substring exists in string",
+      "lesson": "W2L05: String membership",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'dog' in 'catalog' evaluate to?",
+      "type": "multiple_choice",
+      "choices": ["False", "True", "None", "Error"],
+      "answer": "False",
+      "explanation": "'dog' is not a substring of 'catalog'",
+      "lesson": "W2L05: String membership",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Can you use 'in' with lists?",
+      "type": "multiple_choice",
+      "choices": ["Yes", "No", "Only with strings", "Only with numbers"],
+      "answer": "Yes",
+      "explanation": "'in' works with strings, lists, tuples, and other sequences",
+      "lesson": "W2L05: String membership",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does elif stand for?",
+      "type": "multiple_choice",
+      "choices": ["else if", "elif statement", "element if", "error if"],
+      "answer": "else if",
+      "explanation": "elif is short for 'else if'",
+      "lesson": "W2L06: Elif and nested decisions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When is elif checked?",
+      "type": "multiple_choice",
+      "choices": ["Only if previous if/elif was False", "Always", "Only if if was True", "Never"],
+      "answer": "Only if previous if/elif was False",
+      "explanation": "elif only runs if all previous conditions were False",
+      "lesson": "W2L06: Elif and nested decisions",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How many elif can you have?",
+      "type": "multiple_choice",
+      "choices": ["As many as needed", "Only one", "Maximum 5", "None"],
+      "answer": "As many as needed",
+      "explanation": "You can chain multiple elif statements",
+      "lesson": "W2L06: Elif and nested decisions",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a decision table?",
+      "type": "multiple_choice",
+      "choices": ["Table showing all condition combinations", "Table of data", "Loop counter", "Function parameter"],
+      "answer": "Table showing all condition combinations",
+      "explanation": "Decision tables map all possible conditions to outcomes",
+      "lesson": "W2L07: Decision tables",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why use decision tables?",
+      "type": "multiple_choice",
+      "choices": ["Ensure all cases are handled", "Speed up code", "Save memory", "Print data"],
+      "answer": "Ensure all cases are handled",
+      "explanation": "Decision tables help identify missing or redundant conditions",
+      "lesson": "W2L07: Decision tables",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does range(5) produce?",
+      "type": "multiple_choice",
+      "choices": ["0, 1, 2, 3, 4", "1, 2, 3, 4, 5", "0, 1, 2, 3, 4, 5", "1, 2, 3, 4"],
+      "answer": "0, 1, 2, 3, 4",
+      "explanation": "range(n) generates 0 to n-1",
+      "lesson": "W2L08: For loops and range",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How many times does 'for i in range(3)' loop?",
+      "type": "multiple_choice",
+      "choices": ["3", "4", "2", "Infinite"],
+      "answer": "3",
+      "explanation": "range(3) produces 0, 1, 2 (three values)",
+      "lesson": "W2L08: For loops and range",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the loop variable in 'for x in range(5)'?",
+      "type": "multiple_choice",
+      "choices": ["x", "range", "5", "in"],
+      "answer": "x",
+      "explanation": "x is the variable that takes each value from range",
+      "lesson": "W2L08: For loops and range",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does range(2, 5) produce?",
+      "type": "multiple_choice",
+      "choices": ["2, 3, 4", "2, 3, 4, 5", "3, 4, 5", "2, 5"],
+      "answer": "2, 3, 4",
+      "explanation": "range(start, stop) goes from start to stop-1",
+      "lesson": "W2L09: Range patterns",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does range(0, 10, 2) produce?",
+      "type": "multiple_choice",
+      "choices": ["0, 2, 4, 6, 8", "0, 2, 4, 6, 8, 10", "2, 4, 6, 8, 10", "0, 1, 2"],
+      "answer": "0, 2, 4, 6, 8",
+      "explanation": "range(start, stop, step) increments by step (2)",
+      "lesson": "W2L09: Range patterns",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does range(5, 0, -1) produce?",
+      "type": "multiple_choice",
+      "choices": ["5, 4, 3, 2, 1", "0, 1, 2, 3, 4, 5", "5, 4, 3, 2, 1, 0", "Nothing"],
+      "answer": "5, 4, 3, 2, 1",
+      "explanation": "Negative step counts backwards from start to stop-1",
+      "lesson": "W2L09: Range patterns",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the key difference between for and while loops?",
+      "type": "multiple_choice",
+      "choices": ["for has fixed iterations; while depends on condition", "No difference", "while is faster", "for is newer"],
+      "answer": "for has fixed iterations; while depends on condition",
+      "explanation": "for loops iterate over sequences; while loops run until condition is False",
+      "lesson": "W2L10: While loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a sentinel value?",
+      "type": "multiple_choice",
+      "choices": ["Special value that signals loop termination", "Loop counter", "Error value", "Starting value"],
+      "answer": "Special value that signals loop termination",
+      "explanation": "Sentinels like 'quit' or -1 indicate when to stop looping",
+      "lesson": "W2L10: While loops",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What happens if while True has no break?",
+      "type": "multiple_choice",
+      "choices": ["Infinite loop", "Error", "Runs once", "Never runs"],
+      "answer": "Infinite loop",
+      "explanation": "while True loops forever unless broken",
+      "lesson": "W2L10: While loops",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does break do in a loop?",
+      "type": "multiple_choice",
+      "choices": ["Exits the loop immediately", "Skips to next iteration", "Pauses the loop", "Restarts the loop"],
+      "answer": "Exits the loop immediately",
+      "explanation": "break terminates the loop completely",
+      "lesson": "W2L11: Break and continue",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does continue do in a loop?",
+      "type": "multiple_choice",
+      "choices": ["Skips to next iteration", "Exits the loop", "Pauses the loop", "Restarts from beginning"],
+      "answer": "Skips to next iteration",
+      "explanation": "continue jumps to the next loop cycle",
+      "lesson": "W2L11: Break and continue",
+      "difficulty": "easy"
+    },
+    {
+      "question": "After continue, does the loop condition get checked?",
+      "type": "multiple_choice",
+      "choices": ["Yes", "No", "Only in while loops", "Only in for loops"],
+      "answer": "Yes",
+      "explanation": "continue skips remaining code but loop continues normally",
+      "lesson": "W2L11: Break and continue",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is input validation?",
+      "type": "multiple_choice",
+      "choices": ["Checking if input meets requirements", "Getting input", "Printing input", "Storing input"],
+      "answer": "Checking if input meets requirements",
+      "explanation": "Validation ensures input is correct before using it",
+      "lesson": "W2L12: Input validation",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why validate user input?",
+      "type": "multiple_choice",
+      "choices": ["Prevent errors and ensure data quality", "Make code longer", "Slow down users", "Look professional"],
+      "answer": "Prevent errors and ensure data quality",
+      "explanation": "Validation catches bad input before it causes problems",
+      "lesson": "W2L12: Input validation",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What loop structure is good for re-prompting invalid input?",
+      "type": "multiple_choice",
+      "choices": ["while True with break", "for loop", "if/else", "switch"],
+      "answer": "while True with break",
+      "explanation": "Keep asking until valid input, then break",
+      "lesson": "W2L12: Input validation",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a counter in a loop?",
+      "type": "multiple_choice",
+      "choices": ["Variable that increments each iteration", "Loop index", "Timer", "Range value"],
+      "answer": "Variable that increments each iteration",
+      "explanation": "Counters track how many times something occurs",
+      "lesson": "W2L13: Counters and totals",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is an accumulator?",
+      "type": "multiple_choice",
+      "choices": ["Variable that accumulates values", "Counter", "List", "Function"],
+      "answer": "Variable that accumulates values",
+      "explanation": "Accumulators sum up or combine values across iterations",
+      "lesson": "W2L13: Counters and totals",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should a counter be initialized to?",
+      "type": "multiple_choice",
+      "choices": ["0", "1", "None", "-1"],
+      "answer": "0",
+      "explanation": "Start at 0, increment for each occurrence",
+      "lesson": "W2L13: Counters and totals",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you find the maximum value in a list using a loop?",
+      "type": "multiple_choice",
+      "choices": ["Track max, update if current is larger", "Use max()", "Sort and take last", "Count all values"],
+      "answer": "Track max, update if current is larger",
+      "explanation": "Keep updating max variable when a larger value is found",
+      "lesson": "W2L14: Running aggregates",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should you initialize max to when finding maximum?",
+      "type": "multiple_choice",
+      "choices": ["First element or negative infinity", "0", "None", "1"],
+      "answer": "First element or negative infinity",
+      "explanation": "Must start with a value that any real value could exceed",
+      "lesson": "W2L14: Running aggregates",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you calculate average using a loop?",
+      "type": "multiple_choice",
+      "choices": ["Sum all values, then divide by count", "Track average each iteration", "Use avg()", "Sort and take middle"],
+      "answer": "Sum all values, then divide by count",
+      "explanation": "total / count gives the average",
+      "lesson": "W2L14: Running aggregates",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you create an empty list?",
+      "type": "multiple_choice",
+      "choices": ["[]", "{}", "()", "list"],
+      "answer": "[]",
+      "explanation": "Square brackets create an empty list",
+      "lesson": "W2L15: Creating lists",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you create a list with values?",
+      "type": "multiple_choice",
+      "choices": ["[1, 2, 3]", "{1, 2, 3}", "(1, 2, 3)", "list(1, 2, 3)"],
+      "answer": "[1, 2, 3]",
+      "explanation": "Comma-separated values in square brackets",
+      "lesson": "W2L15: Creating lists",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Can lists contain different types?",
+      "type": "multiple_choice",
+      "choices": ["Yes", "No", "Only numbers and strings", "Only same types"],
+      "answer": "Yes",
+      "explanation": "Python lists can contain mixed types: [1, 'hello', True]",
+      "lesson": "W2L15: Creating lists",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does [1, 2, 3][0] return?",
+      "type": "multiple_choice",
+      "choices": ["1", "0", "[1]", "Error"],
+      "answer": "1",
+      "explanation": "Index 0 is the first element",
+      "lesson": "W2L16: List indexing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does [10, 20, 30][1:3] return?",
+      "type": "multiple_choice",
+      "choices": ["[20, 30]", "[10, 20]", "[20]", "[10, 20, 30]"],
+      "answer": "[20, 30]",
+      "explanation": "Slice [1:3] includes indices 1 and 2",
+      "lesson": "W2L16: List indexing",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does [5, 10, 15][-1] return?",
+      "type": "multiple_choice",
+      "choices": ["15", "5", "-1", "Error"],
+      "answer": "15",
+      "explanation": "-1 is the last element",
+      "lesson": "W2L16: List indexing",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does enumerate([10, 20, 30]) provide?",
+      "type": "multiple_choice",
+      "choices": ["(0, 10), (1, 20), (2, 30)", "0, 1, 2", "10, 20, 30", "[0, 1, 2]"],
+      "answer": "(0, 10), (1, 20), (2, 30)",
+      "explanation": "enumerate() yields (index, value) tuples",
+      "lesson": "W2L17: Iterating lists",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you iterate over both index and value?",
+      "type": "multiple_choice",
+      "choices": ["for i, val in enumerate(list)", "for i in range(len(list))", "for val in list", "for i, val in list"],
+      "answer": "for i, val in enumerate(list)",
+      "explanation": "enumerate() provides both index and value",
+      "lesson": "W2L17: Iterating lists",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does list.append(5) do?",
+      "type": "multiple_choice",
+      "choices": ["Adds 5 to end of list", "Adds 5 to beginning", "Returns new list", "Error"],
+      "answer": "Adds 5 to end of list",
+      "explanation": "append() adds an element to the end",
+      "lesson": "W2L18: List methods",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does list.pop() do?",
+      "type": "multiple_choice",
+      "choices": ["Removes and returns last element", "Removes first element", "Clears list", "Returns list size"],
+      "answer": "Removes and returns last element",
+      "explanation": "pop() removes and returns the last item",
+      "lesson": "W2L18: List methods",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's the difference between remove and pop?",
+      "type": "multiple_choice",
+      "choices": ["remove takes value; pop takes index", "No difference", "remove is faster", "pop takes value"],
+      "answer": "remove takes value; pop takes index",
+      "explanation": "remove(value) removes first occurrence; pop(index) removes at position",
+      "lesson": "W2L18: List methods",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does sorted([3, 1, 2]) return?",
+      "type": "multiple_choice",
+      "choices": ["[1, 2, 3]", "[3, 1, 2]", "None", "Error"],
+      "answer": "[1, 2, 3]",
+      "explanation": "sorted() returns a new sorted list",
+      "lesson": "W2L19: Sorting lists",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does list.sort() return?",
+      "type": "multiple_choice",
+      "choices": ["None", "Sorted list", "Original list", "True"],
+      "answer": "None",
+      "explanation": "sort() modifies in-place and returns None",
+      "lesson": "W2L19: Sorting lists",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Does sorted() modify the original list?",
+      "type": "multiple_choice",
+      "choices": ["No", "Yes", "Sometimes", "Only if ascending"],
+      "answer": "No",
+      "explanation": "sorted() creates a new list; original is unchanged",
+      "lesson": "W2L19: Sorting lists",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'hello'.upper() return?",
+      "type": "multiple_choice",
+      "choices": ["'HELLO'", "'hello'", "'Hello'", "Error"],
+      "answer": "'HELLO'",
+      "explanation": "upper() converts all characters to uppercase",
+      "lesson": "W3L01: String slicing and methods",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'WORLD'.lower() return?",
+      "type": "multiple_choice",
+      "choices": ["'world'", "'WORLD'", "'World'", "Error"],
+      "answer": "'world'",
+      "explanation": "lower() converts all characters to lowercase",
+      "lesson": "W3L01: String slicing and methods",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does '  hello  '.strip() return?",
+      "type": "multiple_choice",
+      "choices": ["'hello'", "'  hello  '", "'hello  '", "'  hello'"],
+      "answer": "'hello'",
+      "explanation": "strip() removes leading and trailing whitespace",
+      "lesson": "W3L01: String slicing and methods",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'a,b,c'.split(',') return?",
+      "type": "multiple_choice",
+      "choices": ["['a', 'b', 'c']", "'abc'", "['a,b,c']", "Error"],
+      "answer": "['a', 'b', 'c']",
+      "explanation": "split() divides string at delimiter into a list",
+      "lesson": "W3L02: Split and join",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does '-'.join(['a', 'b', 'c']) return?",
+      "type": "multiple_choice",
+      "choices": ["'a-b-c'", "['a', '-', 'b', '-', 'c']", "'abc'", "Error"],
+      "answer": "'a-b-c'",
+      "explanation": "join() concatenates list elements with separator",
+      "lesson": "W3L02: Split and join",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'hello world'.split() return?",
+      "type": "multiple_choice",
+      "choices": ["['hello', 'world']", "['h','e','l','l','o',' ','w','o','r','l','d']", "'helloworld'", "Error"],
+      "answer": "['hello', 'world']",
+      "explanation": "split() without argument splits on whitespace",
+      "lesson": "W3L02: Split and join",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you create an empty dictionary?",
+      "type": "multiple_choice",
+      "choices": ["{}", "[]", "dict()", "Both {} and dict()"],
+      "answer": "Both {} and dict()",
+      "explanation": "Both {} and dict() create empty dictionaries",
+      "lesson": "W3L03: Dictionary basics",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you access a value in dict = {'a': 1}?",
+      "type": "multiple_choice",
+      "choices": ["dict['a']", "dict.a", "dict(a)", "dict.get(a)"],
+      "answer": "dict['a']",
+      "explanation": "Use square brackets with key to access value",
+      "lesson": "W3L03: Dictionary basics",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What happens if you access a non-existent key?",
+      "type": "multiple_choice",
+      "choices": ["KeyError", "Returns None", "Returns ''", "Creates the key"],
+      "answer": "KeyError",
+      "explanation": "Accessing missing keys raises KeyError",
+      "lesson": "W3L03: Dictionary basics",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does dict.keys() return?",
+      "type": "multiple_choice",
+      "choices": ["View of all keys", "List of keys", "First key", "Count of keys"],
+      "answer": "View of all keys",
+      "explanation": "keys() returns a view object of dictionary keys",
+      "lesson": "W3L04: Dictionary iteration",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does dict.values() return?",
+      "type": "multiple_choice",
+      "choices": ["View of all values", "List of values", "First value", "Sum of values"],
+      "answer": "View of all values",
+      "explanation": "values() returns a view object of dictionary values",
+      "lesson": "W3L04: Dictionary iteration",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does dict.items() return?",
+      "type": "multiple_choice",
+      "choices": ["View of (key, value) tuples", "List of keys", "List of values", "Count of items"],
+      "answer": "View of (key, value) tuples",
+      "explanation": "items() returns (key, value) pairs for iteration",
+      "lesson": "W3L04: Dictionary iteration",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you add a new key-value pair?",
+      "type": "multiple_choice",
+      "choices": ["dict['new_key'] = value", "dict.add('new_key', value)", "dict.append('new_key', value)", "dict.put('new_key', value)"],
+      "answer": "dict['new_key'] = value",
+      "explanation": "Assignment with new key adds it to dictionary",
+      "lesson": "W3L05: Dictionary updates",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does dict.get('key', default) do if key doesn't exist?",
+      "type": "multiple_choice",
+      "choices": ["Returns default", "Raises KeyError", "Returns None", "Creates the key"],
+      "answer": "Returns default",
+      "explanation": "get() returns default value instead of raising error",
+      "lesson": "W3L05: Dictionary updates",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a nested dictionary?",
+      "type": "multiple_choice",
+      "choices": ["Dictionary containing other dictionaries", "Two dictionaries", "Empty dictionary", "Sorted dictionary"],
+      "answer": "Dictionary containing other dictionaries",
+      "explanation": "Nested structures have dictionaries or lists as values",
+      "lesson": "W3L06: Nested structures",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you safely access nested dict data['user']['name']?",
+      "type": "multiple_choice",
+      "choices": ["Check if 'user' exists first", "Use try/except", "data.get('user', {}).get('name')", "All of the above"],
+      "answer": "All of the above",
+      "explanation": "Multiple approaches prevent KeyError on missing keys",
+      "lesson": "W3L06: Nested structures",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is tokenization in text parsing?",
+      "type": "multiple_choice",
+      "choices": ["Splitting text into pieces", "Encrypting text", "Sorting text", "Counting text"],
+      "answer": "Splitting text into pieces",
+      "explanation": "Tokenizing breaks text into words, fields, or chunks",
+      "lesson": "W3L07: Parsing to list of dicts",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's a common pattern for CSV parsing?",
+      "type": "multiple_choice",
+      "choices": ["Split lines, split fields, map to dict keys", "Read all at once", "Use databases", "Regular expressions"],
+      "answer": "Split lines, split fields, map to dict keys",
+      "explanation": "Parse line by line, split on delimiter, assign to fields",
+      "lesson": "W3L07: Parsing to list of dicts",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why validate parsed data?",
+      "type": "multiple_choice",
+      "choices": ["Ensure correct types and values", "Make it faster", "Compress data", "Sort data"],
+      "answer": "Ensure correct types and values",
+      "explanation": "Validation catches malformed or incorrect data early",
+      "lesson": "W3L08: Validation",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What should you check when parsing numbers from text?",
+      "type": "multiple_choice",
+      "choices": ["That conversion succeeds and value is in valid range", "Only the length", "Only the type", "Nothing"],
+      "answer": "That conversion succeeds and value is in valid range",
+      "explanation": "Validate both successful conversion and reasonable values",
+      "lesson": "W3L08: Validation",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which values are falsy in Python?",
+      "type": "multiple_choice",
+      "choices": ["0, '', [], None, False", "Only False", "Only 0", "Only None"],
+      "answer": "0, '', [], None, False",
+      "explanation": "Empty containers, zero, None, and False are all falsy",
+      "lesson": "W3L09: Truthiness",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'if not items:' check?",
+      "type": "multiple_choice",
+      "choices": ["If items is empty or None", "If items is False", "If items is 0", "Syntax error"],
+      "answer": "If items is empty or None",
+      "explanation": "Empty lists/strings/dicts are falsy, so 'not' makes them truthy",
+      "lesson": "W3L09: Truthiness",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you count word frequency with a dictionary?",
+      "type": "multiple_choice",
+      "choices": ["counts[word] = counts.get(word, 0) + 1", "counts[word] += 1", "counts.add(word)", "counts.append(word)"],
+      "answer": "counts[word] = counts.get(word, 0) + 1",
+      "explanation": "get() with default 0 handles first occurrence, then increment",
+      "lesson": "W3L10: Counting with dicts",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What pattern is used for frequency counting?",
+      "type": "multiple_choice",
+      "choices": ["Dictionary with items as keys, counts as values", "List of counts", "String concatenation", "Nested loops"],
+      "answer": "Dictionary with items as keys, counts as values",
+      "explanation": "Dict maps each unique item to its occurrence count",
+      "lesson": "W3L10: Counting with dicts",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is a side effect in a function?",
+      "type": "multiple_choice",
+      "choices": ["Modifying external state or variables", "Returning a value", "Taking parameters", "Printing output"],
+      "answer": "Modifying external state or variables",
+      "explanation": "Side effects change things outside the function's scope",
+      "lesson": "W3L11: State and side effects",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Is modifying a list passed as a parameter a side effect?",
+      "type": "multiple_choice",
+      "choices": ["Yes", "No", "Only if returned", "Only if global"],
+      "answer": "Yes",
+      "explanation": "Modifying mutable arguments affects the caller's data",
+      "lesson": "W3L11: State and side effects",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is problem decomposition?",
+      "type": "multiple_choice",
+      "choices": ["Breaking complex problems into smaller subproblems", "Deleting code", "Combining functions", "Debugging"],
+      "answer": "Breaking complex problems into smaller subproblems",
+      "explanation": "Decomposition makes large problems manageable",
+      "lesson": "W3L12: Problem decomposition",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why decompose problems into functions?",
+      "type": "multiple_choice",
+      "choices": ["Easier to test, understand, and reuse", "Make code longer", "Confuse others", "Required by Python"],
+      "answer": "Easier to test, understand, and reuse",
+      "explanation": "Small focused functions are more maintainable",
+      "lesson": "W3L12: Problem decomposition",
+      "difficulty": "easy"
+    }
+  ]
+}
