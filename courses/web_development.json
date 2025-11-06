@@ -1,0 +1,98 @@
+{
+  "name": "Web Development Fundamentals",
+  "description": "HTML, CSS, and JavaScript basics",
+  "lessons": [
+    {
+      "title": "HTML Structure",
+      "description": "Basic HTML tags and document structure"
+    },
+    {
+      "title": "CSS Styling",
+      "description": "Styling web pages with CSS"
+    },
+    {
+      "title": "JavaScript Basics",
+      "description": "JavaScript fundamentals and DOM manipulation"
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Creating mobile-friendly layouts"
+    }
+  ],
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "type": "flashcard",
+      "answer": "HyperText Markup Language",
+      "explanation": "HTML is the standard markup language for creating web pages",
+      "lesson": "HTML Structure",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which CSS property is used to change text color?",
+      "type": "multiple_choice",
+      "choices": [
+        "text-color",
+        "color",
+        "font-color",
+        "text-style"
+      ],
+      "answer": "color",
+      "explanation": "The 'color' property sets the color of text content",
+      "lesson": "CSS Styling",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the purpose of the <head> tag in HTML?",
+      "type": "flashcard",
+      "answer": "Contains metadata, title, links to stylesheets, and scripts",
+      "explanation": "The head section contains information about the document",
+      "lesson": "HTML Structure",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Which method is used to select an element by ID in JavaScript?",
+      "type": "multiple_choice",
+      "choices": [
+        "querySelector()",
+        "getElementById()",
+        "getElement()",
+        "selectById()"
+      ],
+      "answer": "getElementById()",
+      "explanation": "getElementById() is the standard method to select elements by their ID attribute",
+      "lesson": "JavaScript Basics",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the CSS Box Model?",
+      "type": "flashcard",
+      "answer": "Content, padding, border, and margin layers that surround an element",
+      "explanation": "The box model describes how elements take up space on the page",
+      "lesson": "CSS Styling",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does 'event.preventDefault()' do in JavaScript?",
+      "type": "multiple_choice",
+      "choices": [
+        "Stops event propagation",
+        "Removes the event listener",
+        "Prevents the default browser action",
+        "Cancels all events"
+      ],
+      "answer": "Prevents the default browser action",
+      "explanation": "preventDefault() stops the browser's default behavior for that event",
+      "lesson": "JavaScript Basics",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Explain the difference between 'let', 'const', and 'var' in JavaScript.",
+      "type": "flashcard",
+      "answer": "'var' is function-scoped and hoisted, 'let' is block-scoped and can be reassigned, 'const' is block-scoped and cannot be reassigned",
+      "explanation": "Modern JavaScript prefers let and const over var for better scoping",
+      "lesson": "JavaScript Basics",
+      "difficulty": "hard"
+    }
+  ]
+}
