@@ -101,7 +101,9 @@ class SuddenDeathMode(GameMode):
                 print(f"\n✓ {get_correct_answer_message()} +{xp_earned} XP")
                 print("You survive... for now.")
                 if leveled_up:
-                    print(f"\n{get_level_up_message()}")
+                    input("\nPress Enter to see your reward...")
+                    clear_screen()
+                    print_level_up_banner(tracker.data['level'])
                 input("\nPress Enter to continue...")
             else:
                 # GAME OVER - Record session and show results

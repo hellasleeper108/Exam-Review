@@ -1,6 +1,20 @@
 # Exam Review Game
 
-An interactive CLI-based exam review application with multiple game modes to help you study effectively!
+An interactive CLI-based exam review application with multiple game modes, XP progression, and epic ASCII art to help you study effectively!
+
+```
+    ♥♥♥♥♥         ♥♥♥♥♥
+  ♥♥♥♥♥♥♥♥♥     ♥♥♥♥♥♥♥♥♥
+ ♥♥♥♥♥♥♥♥♥♥♥   ♥♥♥♥♥♥♥♥♥♥♥
+ ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+  ♥♥♥♥  EXAM REVIEW  ♥♥♥♥
+   ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+     ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+       ♥♥♥♥♥♥♥♥♥♥♥♥
+         ♥♥♥♥♥♥♥♥
+           ♥♥♥♥
+             ♥
+```
 
 ## Features
 

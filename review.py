@@ -19,10 +19,14 @@ from game_modes.sudden_death import SuddenDeathMode
 from utils.course_loader import CourseLoader
 from utils.display import clear_screen, print_header, print_menu
 from utils.progress_tracker import ProgressTracker
+from utils.splash import print_splash_screen
 
 
 def main():
     """Main entry point for the exam review application."""
+    # Show splash screen on startup
+    print_splash_screen()
+
     # Initialize course loader and progress tracker
     courses_dir = Path(__file__).parent / "courses"
     loader = CourseLoader(courses_dir)

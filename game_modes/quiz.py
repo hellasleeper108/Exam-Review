@@ -6,6 +6,7 @@ from .base import GameMode
 from utils.display import clear_screen, print_header, print_score
 from utils.course_loader import Course
 from utils.progress_tracker import ProgressTracker
+from utils.splash import print_level_up_banner
 from utils.encouragements import (
     get_correct_answer_message,
     get_wrong_answer_message,
@@ -120,8 +121,10 @@ class QuizMode(GameMode):
 
                 # Check for level up
                 if leveled_up:
-                    print(f"\n{get_level_up_message()}")
-                    print(f"You are now Level {tracker.data['level']}!")
+                    input("\nPress Enter to see your reward...")
+                    clear_screen()
+                    print_level_up_banner(tracker.data['level'])
+                    input("Press Enter to continue...")
             else:
                 streak = 0  # Reset streak
                 print(f"\n✗ {get_wrong_answer_message()}")

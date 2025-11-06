@@ -124,7 +124,10 @@ class TimedChallengeMode(GameMode):
                     total_xp_earned += xp_earned
                     print(f"\n✓ {get_correct_answer_message()} ({time_taken:.1f}s) +{xp_earned} XP")
                     if leveled_up:
-                        print(f"{get_level_up_message()}")
+                        input("\nPress Enter to see your reward...")
+                        clear_screen()
+                        print_level_up_banner(tracker.data['level'])
+                        input("Press Enter to continue...")
                 else:
                     print(f"\n✗ {get_wrong_answer_message()}")
                     print(f"Correct answer: {correct_answer}")
